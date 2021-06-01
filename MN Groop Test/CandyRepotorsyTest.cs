@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 
-namespace MN_Groop_A.P.S.Repositories
+namespace MN_Groop_Test
 {
-    interface ICandy
+    class CandyRepotorsyTest
     {
     }
 }
