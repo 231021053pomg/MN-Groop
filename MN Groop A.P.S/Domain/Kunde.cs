@@ -12,7 +12,6 @@ namespace MN_Groop_A.P.S.Domain
         public string LastName { get; set; }
         public string VejNavn { get; set; }
         public int PostNummer { get; set; }
-        public int MyProperty { get; set; }
         public int LoginId { get; set; }
 
     }

@@ -1,16 +1,43 @@
 ﻿# Logbog 
 
+# onsdag 02/06-2021
+# To do List
+	* færdigør domain samt prøver at færdigør IRepository
+		* IKategoriRepository			()
+		* IKundeRepository				()
+		* ILoginRepository				()
+		* IOrder-DeatailseRepository	()
+		* IOrderRepository				()
+		* IProduktRepository			()
+	* lav base struktur					()
+	* Repository
+		* KategoriRepository			()
+		* KundeRepository				()
+		* LoginRepository				()
+		* OrderRepository				()
+		* Order-deatailRepository		()
+		* ProduktRepository				()
+
+	* E/R diagram
+
+# must do
+	*
+	*
+
+# Logbog 
+* 
+
 # tirsdag 01/06-2021
- to do list 
+ # to do list 
 	når tingende er lavet for de et (X) så er de lavet 
 *	i dag skal der laves domain til alle tingende
-* laver domain til katergrio( svarende til auther) (X)
-* laver domain til produkt (svardernde til book ) (X)
-* laver domain til order (svarderne til book) (X)
-* laver domain til produkt (svardernde til book) (X)
-* laver domain til order-deatels (svarernde til book) (X)
-* laver domain til login ( svarende til book) (X)
-* laver domain til kunde (svarernde til book) (X)
+* laver domain til katergrio( svarende til auther)		(X)
+* laver domain til produkt (svardernde til book )		(X)
+* laver domain til order (svarderne til book)			(X)
+* laver domain til produkt (svardernde til book)		(X)
+* laver domain til order-deatels (svarernde til book)	(X)
+* laver domain til login ( svarende til book)			(X)
+* laver domain til kunde (svarernde til book)			(X)
 
 Must do List 
 * mangler at lave Basestrutur
