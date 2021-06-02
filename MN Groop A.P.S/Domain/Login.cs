@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MN_Groop_A.P.S.Domain
 {
-    public class Login
+    public class Login : BaseStruktur
     {
         [Key]
         public int Id { get; set; }

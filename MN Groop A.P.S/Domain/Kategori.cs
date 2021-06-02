@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MN_Groop_A.P.S.Domain
 {
-    public class Kategori
+    public class Kategori : BaseStruktur
     {
         public Kategori()
         {

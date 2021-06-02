@@ -4,29 +4,32 @@
 # onsdag 02/06-2021
 # To do List
 	* færdigør domain samt prøver at færdigør IRepository
-		* IKategoriRepository			()
-		* IKundeRepository				()
-		* ILoginRepository				()
-		* IOrder-DeatailseRepository	()
-		* IOrderRepository				()
-		* IProduktRepository			()
-	* lav base struktur					()
+		* IKategoriRepository			(x)
+		* IKundeRepository				(x)
+		* ILoginRepository				(x)
+		* IOrder-DeatailseRepository	(x)
+		* IOrderRepository				(x)
+		* IProduktRepository			(x)
+	* lav base struktur					(x)
 	* Repository
-		* KategoriRepository			()
-		* KundeRepository				()
-		* LoginRepository				()
-		* OrderRepository				()
-		* Order-deatailRepository		()
-		* ProduktRepository				()
+		* KategoriRepository			(x)
+		* KundeRepository				(x)
+		* LoginRepository				(x)
+		* OrderRepository				(x)
+		* Order-deatailRepository		(x)
+		* ProduktRepository				(x)
 
 	* E/R diagram
 
 # must do
-	*
-	*
+	* færdiggør repo 
+	* færdiggør database 
 
 # Logbog 
-* 
+* i dag started jeg på at lave repo færdig eller fik dem skrevet mangler stadig lidt af videoen, fik også started på databasen men 
+blev ikke færdig med den.
+* mads var stadigsyg i dag men han skev at vil lave lidt men venter til at se om han har lavet noget tror det ikke men jeg håber at jeg 
+tager fejl, i morgen forsætter jeg på hvor jeg stopped i dag 
 
 # tirsdag 01/06-2021
  # to do list 

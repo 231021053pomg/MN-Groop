@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace MN_Groop_A.P.S.Domain
 {
-    public class Kunde
+    public class Kunde : BaseStruktur
     {
         [Key]
         public int Id { get; set; }
@@ -20,7 +21,11 @@ namespace MN_Groop_A.P.S.Domain
         [Required]
         [StringLength(37, ErrorMessage = "The street name i to long the name does not eksist!! no road in dk is that long")]
         public string VejNavn { get; set; }
+        [Required]
+        [StringLength(4, ErrorMessage = "er du ikke dansk så sælger vi ikke til dig ")]
         public int PostNummer { get; set; }
+
+        [ForeignKey("Login.Id")]
         public int LoginId { get; set; }
 
     }
