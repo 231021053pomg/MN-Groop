@@ -1,4 +1,5 @@
 ﻿# Logbog 
+# time line"https://docs.google.com/spreadsheets/d/1TN40KqvpYpN_5dOjwKJ8zJZhrBSNYHDXr-AJjSg6Dj8/edit#gid=0" 
 
 # onsdag 02/06-2021
 # To do List
