@@ -9,7 +9,7 @@ namespace MN_Groop_A.P.S.Repositories
 {
     public class KundeRepositoryb : IKundeRepository
     {
-        public Task<Kunde> Create(string firstname, string lastname, string vejnavn, int postnummer)
+        public Task<Kunde> Create(string firstname, string lastname, string vejnavn, int postnummer, string email)
         {
             throw new NotImplementedException();
         }
