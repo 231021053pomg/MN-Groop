@@ -10,7 +10,7 @@ namespace MN_Groop_A.P.S.IRepositories
     {
         Task<List<Login>> GetAll();
         Task<Login> GetById(int id);
-        Task<Login> Create(string email, string password);
+        Task<Login> Create(Login login);
         Task<Login> Update(int id, Login login);
         Task<Login> Delete(int id);
         Task<Login> IsAdmin(int id);

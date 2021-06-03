@@ -1,62 +1,75 @@
-﻿# Logbog 
+﻿#Logbog 
 # time line"https://docs.google.com/spreadsheets/d/1TN40KqvpYpN_5dOjwKJ8zJZhrBSNYHDXr-AJjSg6Dj8/edit#gid=0" 
+
+#torsdag 03/06-2021
+# To do List
+* færdig gær de reop som der bev opretter i går 
+
+# Mustdo
+* repo færdig samt database 
+
+#Logbog 
+* mads er stadig syg oh håber på at han laver noget når han er hjemme, jeg forsatte med at lave repo samt database som jeg ikke 
+bev færdig med i går.
+mads kom efter froksot og arbejet endlig godt intiensivt, mads kom med den godt ide at vi skulle goså have en 
+shipping/send repo som vi kan bruge til at sende med, min ide var at vi bare lavet et klick and collevt. manger kun 
+1-2 repo som der mangler at blive skrevet 
 
 # onsdag 02/06-2021
 # To do List
-	* færdigør domain samt prøver at færdigør IRepository
-		* IKategoriRepository			(x)
-		* IKundeRepository				(x)
-		* ILoginRepository				(x)
-		* IOrder-DeatailseRepository	(x)
-		* IOrderRepository				(x)
-		* IProduktRepository			(x)
-	* lav base struktur					(x)
-	* Repository
-		* KategoriRepository			(x)
-		* KundeRepository				(x)
-		* LoginRepository				(x)
-		* OrderRepository				(x)
-		* Order-deatailRepository		(x)
-		* ProduktRepository				(x)
+	*færdigør domain samt prøver at færdigør IRepository
+		* IKategoriRepository			()
+		* IKundeRepository				()
+		* ILoginRepository				()
+		* IOrder-DeatailseRepository	()
+		* IOrderRepository				()
+		* IProduktRepository			()
+		* lav base struktur				()
+		* Repository
+		* KategoriRepository			()
+		* KundeRepository				()
+		* LoginRepository				()
+		* OrderRepository				()
+		* Order-deatailRepository		()
+		* ProduktRepository				()
 
-	* E/R diagram
+* E/R diagram
 
 # must do
 	* færdiggør repo 
 	* færdiggør database 
 
 # Logbog 
-* i dag started jeg på at lave repo færdig eller fik dem skrevet mangler stadig lidt af videoen, fik også started på databasen men 
-blev ikke færdig med den.
-* mads var stadigsyg i dag men han skev at vil lave lidt men venter til at se om han har lavet noget tror det ikke men jeg håber at jeg 
-tager fejl, i morgen forsætter jeg på hvor jeg stopped i dag 
+	* i dag started jeg på at lave repo færdig eller fik dem skrevet mangler stadig lidt af videoen, fik også started på databasen men 
+	blev ikke færdig med den.
+	* mads var stadigsyg i dag men han skev at vil lave lidt men venter til at se om han har lavet noget tror det ikke men jeg håber at jeg 
+	tager fejl, i morgen forsætter jeg på hvor jeg stopped i dag 
 
 # tirsdag 01/06-2021
- # to do list 
+# to do list 
 	når tingende er lavet for de et (X) så er de lavet 
-*	i dag skal der laves domain til alle tingende
-* laver domain til katergrio( svarende til auther)		(X)
-* laver domain til produkt (svardernde til book )		(X)
-* laver domain til order (svarderne til book)			(X)
-* laver domain til produkt (svardernde til book)		(X)
-* laver domain til order-deatels (svarernde til book)	(X)
-* laver domain til login ( svarende til book)			(X)
-* laver domain til kunde (svarernde til book)			(X)
+		*	i dag skal der laves domain til alle tingende
+		* laver domain til katergrio( svarende til auther)		(X)
+		* laver domain til produkt (svardernde til book )		(X)
+		* laver domain til order (svarderne til book)			(X)
+		* laver domain til produkt (svardernde til book)		(X)
+		* laver domain til order-deatels (svarernde til book)	(X)
+		* laver domain til login ( svarende til book)			(X)
+		* laver domain til kunde (svarernde til book)			(X)
 
-Must do List 
+#Must do List 
 * mangler at lave Basestrutur
 * mangler at lave reporosty til de domainer jeg har 
 * mangler at lave er diagram 
 
-lobog 
+#lobog 
 * kom sener i dag så nået ikke det store mads var her ikke i dag. men fik en god snak med jack om at komme i gang med projektet 
-	vi fik snakket om hvad der skal være i det og vi kom sammen til at vi skal lave en (to do list) med de ting som vi skal lave
-	hvær dag. 
+vi fik snakket om hvad der skal være i det og vi kom sammen til at vi skal lave en (to do list) med de ting som vi skal lave	hvær dag. 
 * jack snakket om at vi også skal dele opgaverene ud mellem os så vi ved hvad hiannen laver. 
 * min plan for i dag er at starte på at lave domainerne og følger jack vidoer til hvordan man laver dem 
 * efter som at mads ikke er her i dag kunne jeg godt finde på at lave om på projektet efter som at det virker til at han ikke 
-	gidder det her projekt, og så lave det om til min oprendlig ide med biler(author) og acceritios (book). men lige nu holder
-	jeg mig til planen håber mads kommer i morgen så vi kan snakke om hvad planen er om hvad vi laver vær i sær. 
+gidder det her projekt, og så lave det om til min oprendlig ide med biler(author) og acceritios (book). men lige nu holder
+jeg mig til planen håber mads kommer i morgen så vi kan snakke om hvad planen er om hvad vi laver vær i sær. 
 
 # Mandag 31/05-2021
 # Niklas

@@ -10,7 +10,7 @@ namespace MN_Groop_A.P.S.Repositories
     {
         Task<List<Kategori>> GetAll();
         Task<Kategori> GetById(int id);
-        Task<Kategori> Create(string title, string beskrivelse);
+        Task<Kategori> Create(Kategori kategori);
         Task<Kategori> Update(int id, Kategori kategori);
         Task<Kategori> Delete(int id);
 

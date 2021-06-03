@@ -9,16 +9,6 @@ namespace MN_Groop_A.P.S.Repositories
 {
     public class Order_DetailseRepository : IOrderRepository
     {
-        public Task<Order> Create(int id, DateTime orderdate)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<Order> Delete(int id)
-        {
-            throw new NotImplementedException();
-        }
-
         public Task<List<Order>> GetAll()
         {
             throw new NotImplementedException();
@@ -29,12 +19,22 @@ namespace MN_Groop_A.P.S.Repositories
             throw new NotImplementedException();
         }
 
-        public Task<Order> LoginId(int id)
+        public Task<Order> Create(int id, DateTime orderdate)
         {
             throw new NotImplementedException();
         }
 
         public Task<Order> Update(int id, Order order)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<Order> Delete(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<Order> LoginId(int id)
         {
             throw new NotImplementedException();
         }

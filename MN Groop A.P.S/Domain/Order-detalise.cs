@@ -10,7 +10,7 @@ namespace MN_Groop_A.P.S.Domain
     public class Order_detalise : BaseStruktur
     {
         
-        public int Id { get; set; }
+        
         [Required]
         [StringLength(99, ErrorMessage = "antalet it to mutch")]
         public int Antal { get; set; }

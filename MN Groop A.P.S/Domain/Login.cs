@@ -8,8 +8,7 @@ namespace MN_Groop_A.P.S.Domain
 {
     public class Login : BaseStruktur
     {
-        [Key]
-        public int Id { get; set; }
+        
         [Required]
         [StringLength(40, ErrorMessage = " mail to long fiks it !! or your fired ")]
         public string Email { get; set; }
@@ -17,6 +16,8 @@ namespace MN_Groop_A.P.S.Domain
         [Required]
         [StringLength(20, ErrorMessage = "Password does not match to long or rong password")]
         public string Password { get; set; }
+
+        [Required]
         public bool IsAdmin { get; set; }
     }
 }
