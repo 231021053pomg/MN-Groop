@@ -24,6 +24,10 @@ namespace MN_Groop_A.P.S.Domain
         [StringLength(4, ErrorMessage = "er du ikke dansk så sælger vi ikke til dig ")]
         public int PostNummer { get; set; }
 
+        [Required]
+        [StringLength(40, ErrorMessage = " mail to long fiks it !! or your fired ")]
+        public string Email { get; set; }
+
         [ForeignKey("Login.Id")]
         public int LoginId { get; set; }
 

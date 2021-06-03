@@ -11,8 +11,7 @@ namespace MN_Groop_A.P.S.Repositories
 {
     public class KundeRepositoryb : IKundeRepository
     {
-        private readonly MNGroupDBConktext _context;
-        public KundeRepositoryb( MNGroupDBConktext conktext)
+        public Task<Kunde> Create(string firstname, string lastname, string vejnavn, int postnummer)
         {
             _context = conktext;
         }
