@@ -7,36 +7,32 @@ using MN_Groop_A.P.S.IRepositories;
 
 namespace MN_Groop_A.P.S.Repositories
 {
-    public class Order_DetailseRepository : IOrderRepository
+    public class DeliveryRepository: IDeliveryRepository
     {
-        public Task<Order> Create(int id, DateTime orderdate, double totalamount)
+        public Task<Delivery> Create(string name, string addresse, int leveringspris, string leveringsmetode)
         {
             throw new NotImplementedException();
         }
 
-        public Task<Order> Delete(int id)
+        public Task<Delivery> Delete(int id)
         {
             throw new NotImplementedException();
         }
 
-        public Task<List<Order>> GetAll()
+        public Task<List<Delivery>> GetAll()
         {
             throw new NotImplementedException();
         }
 
-        public Task<Order> GetById(int id)
+        public Task<Delivery> GetById(int id)
         {
             throw new NotImplementedException();
         }
 
-        public Task<Order> LoginId(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<Order> Update(int id, Order order)
+        public Task<Delivery> Update(int id, Delivery delivery)
         {
             throw new NotImplementedException();
         }
     }
+}
 }

@@ -10,7 +10,7 @@ namespace MN_Groop_A.P.S.IRepositories
     {
         Task<List<Order>> GetAll();
         Task<Order> GetById(int id);
-        Task<Order> Create(int id, DateTime orderdate);
+        Task<Order> Create(int id, DateTime orderdate, double totalamount);
         Task<Order> Update(int id, Order order);
         Task<Order> Delete(int id);
         Task<Order> LoginId(int id);
