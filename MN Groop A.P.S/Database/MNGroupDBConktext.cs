@@ -15,5 +15,6 @@ namespace MN_Groop_A.P.S.Database
         public DbSet<Order> Order { get; set; }
         public DbSet<Order_detalise> order_Detalise { get; set; }
         public DbSet<Produkt> Produkt { get; set; }
+        public DbSet<Delivery> Delivery { get; set; }
     }
 }
