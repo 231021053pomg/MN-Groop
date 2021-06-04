@@ -7,8 +7,15 @@
 #Mustdo
 	* repo 
 	* xunit + test
-#logbog
-	* 
+#logbog nilkas
+	* fik lave alle repo færdig og started på xunit  
+	* jeg started med at lege med xunit(i testRepo) men den fejlet så skal lige spørger jack om sparing
+		mads ved jeg ikke hvvor meget han har lavet men sådan er det, på mandag skal vi samarbejde om at lave et
+		E/R diagram som skulle hjælpe os med at løste det her projekt 
+	* jeg startet på at lave nogle test på den som hedder testRepo men der er nogle fejl i så den ikke kunne køre ordnligt 
+		men alt det tager jeg på mandag -.-
+#logbog mads
+	*
 	*
 
 #torsdag 03/06-2021
