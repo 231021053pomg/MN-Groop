@@ -27,7 +27,7 @@ namespace MN_Groop_A.P.S.Repositories
         {
             return await _context.Login
                 .Where(a => a.DelitedAt == null)
-                .FirstOrDefaultAsync(a => a.Id.id);
+                .FirstOrDefaultAsync(a => a.Id ==id);
 
         }
 
@@ -55,7 +55,7 @@ namespace MN_Groop_A.P.S.Repositories
             return editlogin;
         }
 
-        public Task<Login> Delete(int id)
+        public async Task<Login> Delete(int id)
         {
             var login = await _context.Login.FirstOrDefaultAsync(a => a.Id == id);
             if (login != null)
@@ -67,7 +67,7 @@ namespace MN_Groop_A.P.S.Repositories
             return login;
         }
 
-        public Task<Login> IsAdmin(int id)
+        public  Task<Login> IsAdmin(int id)
         {
             throw new NotImplementedException();
         }

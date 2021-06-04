@@ -22,6 +22,6 @@ namespace MN_Groop_A.P.S.Domain
         [ForeignKey("Produkt.Id")]
         public int ProduktId { get; set; }
         [ForeignKey("Order.Id")]
-        public int OrderId { get; set; }
+        public int Orderid { get; set; }
     }
 }

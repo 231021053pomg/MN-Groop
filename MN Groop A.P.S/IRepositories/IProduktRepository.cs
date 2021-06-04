@@ -10,7 +10,7 @@ namespace MN_Groop_A.P.S.IRepositories
     {
         Task<List<Produkt>> GetAll();
         Task<Produkt> GetById(int id);
-        Task<Produkt> Create(string name, string beskrivelse, int pris);
+        Task<Produkt> Create(Produkt produkt);
         Task<Produkt> Update(int id, Produkt produkt);
         Task<Produkt> Delete(int id);
     }
