@@ -10,7 +10,7 @@ namespace MN_Groop_A.P.S.Domain
     public class Order_detalise : BaseStruktur
     {
         
-        public int Id { get; set; }
+        
         [Required]
         [StringLength(99, ErrorMessage = "amount is to big")]
         public int Antal { get; set; }
@@ -27,6 +27,6 @@ namespace MN_Groop_A.P.S.Domain
         [ForeignKey("Produkt.Id")]
         public int ProduktId { get; set; }
         [ForeignKey("Order.Id")]
-        public int OrderId { get; set; }
+        public int Orderid { get; set; }
     }
 }

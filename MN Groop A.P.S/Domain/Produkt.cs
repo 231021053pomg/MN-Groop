@@ -10,8 +10,7 @@ namespace MN_Groop_A.P.S.Domain
     public class Produkt : BaseStruktur
     {
 
-        [Key]
-        public int Id { get; set; }
+        
 
         [Required]
         [StringLength(32, ErrorMessage = " name does not match")]

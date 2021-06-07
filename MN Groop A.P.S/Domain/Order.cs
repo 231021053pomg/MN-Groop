@@ -9,8 +9,7 @@ namespace MN_Groop_A.P.S.Domain
 {
     public class Order : BaseStruktur
     {
-        [Key]
-        public int Id { get; set; }
+        
         [Required]
         public DateTime OrderDate { get; set; }
 

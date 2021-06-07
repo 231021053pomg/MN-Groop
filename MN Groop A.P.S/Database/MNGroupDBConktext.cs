@@ -9,6 +9,12 @@ namespace MN_Groop_A.P.S.Database
 {
     public class MNGroupDBConktext : DbContext
     {
+        public MNGroupDBConktext() {}
+        public MNGroupDBConktext(DbContextOptions<MNGroupDBConktext> options):base(options)
+        {
+
+        }
+
         public DbSet<Kategori> Kategori { get; set; }
         public DbSet<Kunde> Kunde { get; set; }
         public DbSet<Login> Login { get; set; }
@@ -17,4 +23,4 @@ namespace MN_Groop_A.P.S.Database
         public DbSet<Produkt> Produkt { get; set; }
         public DbSet<Delivery> Delivery { get; set; }
     }
-}
+}   
