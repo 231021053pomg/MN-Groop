@@ -25,5 +25,6 @@ namespace MN_Groop_A.P.S.Domain
 
         [ForeignKey("Kategori.Id")]
         public int KategoriId { get; set; }
+        public Kategori Kategori { get; set; } // vi har Kategori id i forvejen men vi vil gerne have Kategori som indenholder kategorigen 
     }
 }

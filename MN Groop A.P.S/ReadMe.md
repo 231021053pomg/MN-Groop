@@ -1,5 +1,18 @@
 ﻿#Logbog 
 # time line"https://docs.google.com/spreadsheets/d/1TN40KqvpYpN_5dOjwKJ8zJZhrBSNYHDXr-AJjSg6Dj8/edit#gid=0" 
+
+#mandag 07-06/2021
+# to do list
+	* start på services
+	*
+#Must to
+	* skal lave services 
+	* skal havde E/r Diragream
+#Logbog
+	*
+	*
+
+
 #fredag 04-06-2021
 #To do list
 	* repo skal laves færgig i dag 
