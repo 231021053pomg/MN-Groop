@@ -1,4 +1,4 @@
-﻿using System;
+﻿    using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -20,7 +20,7 @@ namespace MN_Groop_A.P.S.Repositories
         {
             return await _context.Produkt
                 .Where(a => a.DelitedAt == null)
-                .Include(a=> a.KategoriId)
+                .Include(a=> a.Kategori)
                 .ToListAsync();
         }
 
@@ -28,7 +28,7 @@ namespace MN_Groop_A.P.S.Repositories
         {
             return await _context.Produkt
                 .Where(a => a.DelitedAt == null)
-                .Include(a => a.KategoriId)
+                .Include(a => a.Kategori)
                 .FirstOrDefaultAsync(a => a.Id == id);
         }
         public async Task<Produkt> Create(Produkt produkt)
