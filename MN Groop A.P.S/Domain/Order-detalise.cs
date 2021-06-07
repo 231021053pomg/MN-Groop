@@ -12,8 +12,13 @@ namespace MN_Groop_A.P.S.Domain
         
         
         [Required]
-        [StringLength(99, ErrorMessage = "antalet it to mutch")]
+        [StringLength(99, ErrorMessage = "amount is to big")]
         public int Antal { get; set; }
+
+        public int Totalamount { get; set; }
+        [Required]
+        [StringLength(99, ErrorMessage = "amount is to big")]
+        public int Totalamunt { get; set; }
 
         [Required]
         [StringLength(9999, ErrorMessage = " to expinsive")]

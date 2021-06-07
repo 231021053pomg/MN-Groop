@@ -62,6 +62,6 @@ namespace MN_Groop_A.P.S.Repositories
             }
             return kunde;
         }
-       
+
     }
 }

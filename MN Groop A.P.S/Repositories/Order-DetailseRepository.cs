@@ -11,8 +11,12 @@ namespace MN_Groop_A.P.S.Repositories
 {
     public class Order_DetailseRepository : IOrder_DetailseRepository
     {
+
+        public Task<Order> Create(int id, DateTime orderdate, double totalamount)
+
         private readonly MNGroupDBConktext _context;
         public Order_DetailseRepository(MNGroupDBConktext conktext)
+
         {
             _context = conktext;
         }
