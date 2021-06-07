@@ -9,8 +9,13 @@
 	* skal lave services 
 	* skal havde E/r Diragream
 #Logbog
+	* fi lavet test på produkt både created, getall, updated og deleted jeg havde nogle fejl i mit kode
+	men jack hjalp mig medat få dem fikse i morgen skal jeg bare lige hurtigt cp dem til alle de andre og oprette 
+	de andre test casser så er det kalret og så kan jeg forsætte med at lave services 
 	*
-	*
+#To do list tmr 
+	* lav test for alle de andre repoises 
+	* start på services senest torsdag 
 
 
 #fredag 04-06-2021
