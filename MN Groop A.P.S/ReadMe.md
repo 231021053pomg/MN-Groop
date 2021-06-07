@@ -1,5 +1,15 @@
 ﻿#Logbog 
 # time line"https://docs.google.com/spreadsheets/d/1TN40KqvpYpN_5dOjwKJ8zJZhrBSNYHDXr-AJjSg6Dj8/edit#gid=0" 
+#fredag 04-06-2021
+#To do list
+	* repo skal laves færgig i dag 
+	* vil prøve at starte på xunit og lidt test 
+#Mustdo
+	* repo 
+	* xunit + test
+#logbog
+	* 
+	*
 
 #torsdag 03/06-2021
 # To do List
@@ -32,6 +42,7 @@ shipping/send repo som vi kan bruge til at sende med, min ide var at vi bare lav
 		* OrderRepository				()
 		* Order-deatailRepository		()
 		* ProduktRepository				()
+
 
 * E/R diagram
 

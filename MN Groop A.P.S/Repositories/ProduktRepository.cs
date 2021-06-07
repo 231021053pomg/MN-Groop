@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using MN_Groop_A.P.S.Database;
 using MN_Groop_A.P.S.Domain;
 using MN_Groop_A.P.S.IRepositories;
 
@@ -9,27 +11,57 @@ namespace MN_Groop_A.P.S.Repositories
 {
     public class ProduktRepository : IProduktRepository
     {
-        public Task<List<Produkt>> GetAll()
+        private readonly MNGroupDBConktext _context;
+        public ProduktRepository(MNGroupDBConktext context)
         {
-            throw new NotImplementedException();
+            _context = context;
+        }
+        public async Task<List<Produkt>> GetAll()
+        {
+            return await _context.Produkt
+                .Where(a => a.DelitedAt == null)
+                .Include(a=> a.KategoriId)
+                .ToListAsync();
         }
 
-        public Task<Produkt> GetById(int id)
+        public async Task<Produkt> GetById(int id)
         {
-            throw new NotImplementedException();
+            return await _context.Produkt
+                .Where(a => a.DelitedAt == null)
+                .Include(a => a.KategoriId)
+                .FirstOrDefaultAsync(a => a.Id == id);
         }
-        public Task<Produkt> Create(string name, string beskrivelse, int pris)
+        public async Task<Produkt> Create(Produkt produkt)
         {
-            throw new NotImplementedException();
+            produkt.CreateAt = DateTime.Now;
+            _context.Produkt.Add(produkt);
+            await _context.SaveChangesAsync();
+            return produkt;
         }
-        public Task<Produkt> Update(int id, Produkt produkt)
+        public async Task<Produkt> Update(int id, Produkt produkt)
         {
-            throw new NotImplementedException();
+            var editProdukt = await _context.Produkt.FirstOrDefaultAsync(a => a.Id == id);
+            if (editProdukt != null)
+            {
+                editProdukt.UpdatetAt = DateTime.Now;
+                editProdukt.Name = produkt.Name;
+                editProdukt.Beskrivelse = produkt.Beskrivelse;
+                editProdukt.Pris = produkt.Pris;
+                _context.Produkt.Update(editProdukt);
+                await _context.SaveChangesAsync();
+            }
+            return editProdukt;
         }
 
-        public Task<Produkt> Delete(int id)
+        public async Task<Produkt> Delete(int id)
         {
-            throw new NotImplementedException();
+            var produkt = await _context.Produkt.FirstOrDefaultAsync(a => a.Id == id);
+            if (produkt != null)
+            {
+                produkt.DelitedAt = DateTime.Now;
+                await _context.SaveChangesAsync();
+            }
+            return produkt;
         }
 
     }

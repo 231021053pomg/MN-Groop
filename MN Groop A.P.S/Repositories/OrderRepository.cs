@@ -1,35 +1,73 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using MN_Groop_A.P.S.Database;
+using MN_Groop_A.P.S.Domain;
+using MN_Groop_A.P.S.IRepositories;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using MN_Groop_A.P.S.Domain;
-using MN_Groop_A.P.S.IRepositories;
 
 namespace MN_Groop_A.P.S.Repositories
 {
-    public class OrderRepository : IOrder_DetailseRepository
+    public class OrderRepository : IOrderRepository
     {
-        public Task<List<Order_detalise>> GetAll()
+        private readonly MNGroupDBConktext _context;
+        public OrderRepository(MNGroupDBConktext context)
         {
-            throw new NotImplementedException();
+            _context = context;
         }
-        public Task<Order_detalise> GetById(int id)
+        public async Task<List<Order>> GetAll()
         {
-            throw new NotImplementedException();
+            return await _context.Order
+                .Where(a => a.DelitedAt == null)
+                .Include(a => a.OrderDate)
+                .ToListAsync();
         }
-        public Task<Order_detalise> Create(int antal, int stkpris, int produktid, int orderid)
+        public async Task<Order> GetById(int id)
         {
-            throw new NotImplementedException();
+            return await _context.Order
+                .Where(a => a.DelitedAt == null)
+                .Include(a => a.OrderDate)
+                .FirstOrDefaultAsync();
         }
-        public Task<Order_detalise> Update(int id, Order_detalise order_Detalise)
+       
+        public async Task<Order> Update(int id, Order order)
         {
-            throw new NotImplementedException();
+            var editOrder = await _context.Order.FirstOrDefaultAsync(a => a.Id == id);
+            if (editOrder != null)
+            {
+                editOrder.UpdatetAt = DateTime.Now;
+                _context.Order.Update(editOrder);
+                await _context.SaveChangesAsync();
+            }
+            return editOrder;
+
+          
+        }
+        public async Task<Order> Create(int id, Order order)
+        {
+            order.CreateAt = DateTime.Now;
+            _context.Order.Add(order);
+            await _context.SaveChangesAsync();
+            return order;
+            
         }
 
-        public Task<Order_detalise> Delete(int id)
+        public async Task<Order> Delete(int id)
+        {
+            var order = await _context.Order.FirstOrDefaultAsync(a => a.Id == id);
+            if (order != null)
+            {
+                order.DelitedAt = DateTime.Now;
+                await _context.SaveChangesAsync();
+
+            }
+            return order;
+        }
+
+        public Task<Order> LoginId(int id)
         {
             throw new NotImplementedException();
         }
-
     }
 }
