@@ -17,18 +17,16 @@ namespace MN_Groop_A.P.S.Repositories
         {
             _context = conktext;
         }
-        public Task<Delivery> Create(int Antal, string name, string address, int leveringspris, string leveringsmetode)
-        {
-            
-        }
-       
-        public async Task<Delivery> Create(Delivery delivery)
+        public async Task<Delivery> Create(int Antal, string name, string address, int leveringspris, string leveringsmetode, Delivery delivery)
         {
             delivery.CreateAt = DateTime.Now;
             _context.Delivery.Add(delivery);
             await _context.SaveChangesAsync();
             return delivery;
+            
         }
+       
+       
         public async Task<Delivery> Update(int id, Delivery Delivery)
         {
             var editDelivery = await _context.Delivery.FirstOrDefaultAsync(a => a.Id == id);
