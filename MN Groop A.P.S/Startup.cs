@@ -35,7 +35,7 @@ namespace MN_Groop_A.P.S
                 ("MyConnection"))
                 );
 
-            services.AddScoped<IKategoriRepository, KategoriRepository>();
+            services.AddScoped<KategoriRepository, KategoriRepository>();
 
             services.AddControllers();
             services.AddSwaggerGen(c =>

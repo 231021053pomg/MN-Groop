@@ -1,18 +1,17 @@
-﻿using System;
+﻿using MN_Groop_A.P.S.Domain;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using MN_Groop_A.P.S.Domain;
 
-namespace MN_Groop_A.P.S.IRepositories
+namespace MN_Groop_A.P.S.IServices
 {
-    public interface IKategoriRepository
+    interface IKategoriServices
     {
-        Task<List<Kategori>> GetAll();
-        Task<Kategori> GetById(int id);
+        Task<List<Kategori>> GetAllkategoris();
+        Task<Kategori> GetKategoriById(int id);
         Task<Kategori> Create(Kategori kategori);
         Task<Kategori> Update(int id, Kategori kategori);
         Task<Kategori> Delete(int id);
-
     }
 }

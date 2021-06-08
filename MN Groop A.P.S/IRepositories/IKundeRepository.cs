@@ -6,7 +6,7 @@ using MN_Groop_A.P.S.Domain;
 
 namespace MN_Groop_A.P.S.IRepositories
 {
-    interface IKundeRepository
+    public interface IKundeRepository
     {
         Task<List<Kunde>> GetAll();
         Task<Kunde> GetById(int id);

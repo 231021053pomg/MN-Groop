@@ -6,7 +6,7 @@ using MN_Groop_A.P.S.Domain;
 
 namespace MN_Groop_A.P.S.IRepositories
 {
-    interface IProduktRepository
+    public interface IProduktRepository
     {
         Task<List<Produkt>> GetAll();
         Task<Produkt> GetById(int id);

@@ -6,7 +6,7 @@ using MN_Groop_A.P.S.Domain;
 
 namespace MN_Groop_A.P.S.IRepositories
 {
-    interface ILoginRepository
+    public interface ILoginRepository
     {
         Task<List<Login>> GetAll();
         Task<Login> GetById(int id);

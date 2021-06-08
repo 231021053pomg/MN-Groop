@@ -44,14 +44,14 @@ namespace MN_Groop_A.P.S.Repositories
 
           
         }
-        public async Task<Order> Create(int id, Order order)
+        public async Task<Order> Create(Order order)
         {
             order.CreateAt = DateTime.Now;
             _context.Order.Add(order);
             await _context.SaveChangesAsync();
             return order;
-            
         }
+        
 
         public async Task<Order> Delete(int id)
         {
@@ -69,5 +69,6 @@ namespace MN_Groop_A.P.S.Repositories
         {
             throw new NotImplementedException();
         }
+
     }
 }

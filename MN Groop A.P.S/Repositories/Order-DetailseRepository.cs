@@ -12,7 +12,7 @@ namespace MN_Groop_A.P.S.Repositories
     public class Order_DetailseRepository : IOrder_DetailseRepository
     {
 
-        public Task<Order> Create(int id, DateTime orderdate, double totalamount)
+        
 
         private readonly MNGroupDBConktext _context;
         public Order_DetailseRepository(MNGroupDBConktext conktext)
@@ -37,7 +37,7 @@ namespace MN_Groop_A.P.S.Repositories
         }
 
         
-        public async Task<Order_detalise> Create(int id, Order_detalise order_Detalise)
+        public async Task<Order_detalise> Create(Order_detalise order_Detalise)
         {
             order_Detalise.CreateAt = DateTime.Now;
             _context.order_Detalise.Add(order_Detalise);

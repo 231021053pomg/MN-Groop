@@ -9,10 +9,13 @@
 	* test af repos
 	*
 # To Do List TMR 
-	* 	
+	* 	færdigør de sidste services 
 	*
 #Logbog 
-	*	
+	*	jeg started med at færdiggøre den test jeg var i gang med man gav den til mads og så skule han
+	arbjde vidre på dem. vi fik snakket med jack om at vi skulle tage at komme i gang med at lave services
+	jeg skal til at arbejde meget igemmen så det er vi kan blive færdig med services samt vi skal starte på angular 
+	på torsdag men tror ikke at vi når at blive færdimge med de ting 
 
 
 #mandag 07-06/2021
