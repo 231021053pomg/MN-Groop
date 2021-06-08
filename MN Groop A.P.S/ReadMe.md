@@ -1,6 +1,20 @@
 ﻿#Logbog 
 # time line"https://docs.google.com/spreadsheets/d/1TN40KqvpYpN_5dOjwKJ8zJZhrBSNYHDXr-AJjSg6Dj8/edit#gid=0" 
 
+#tirsdag 08-06/2021
+#To do list
+	* færdigør test af de værse repos 
+	* start på services 
+# Must Do
+	* test af repos
+	*
+# To Do List TMR 
+	* 	
+	*
+#Logbog 
+	*	
+
+
 #mandag 07-06/2021
 # to do list
 	* start på services
