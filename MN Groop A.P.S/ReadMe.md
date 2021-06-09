@@ -20,7 +20,7 @@
 		mads var syg i dag så ham har jeg ikke hørt så meget fra men jeg klare mig selv som jeg er vantil og 
 		arbejder i gemmen så godt jeg kan i den her varme. 
 		de test som jeg mangler at lave er i services test men. hvis jeg skal når at komme i mål med projektet så
-		skal jeg ikke tænke på de der test og så bare lave de der controller i morgen i stednden for 
+		skal jeg ikke tænke på de der test og så bare lave de der controller i morgen i stednden for asfd
 
 
 #tirsdag 08-06/2021
