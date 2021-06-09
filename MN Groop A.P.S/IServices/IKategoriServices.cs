@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MN_Groop_A.P.S.IServices
 {
-    interface IKategoriServices
+    public interface IKategoriServices
     {
         Task<List<Kategori>> GetAllkategoris();
         Task<Kategori> GetKategoriById(int id);

@@ -1,6 +1,21 @@
 ﻿#Logbog 
 # time line"https://docs.google.com/spreadsheets/d/1TN40KqvpYpN_5dOjwKJ8zJZhrBSNYHDXr-AJjSg6Dj8/edit#gid=0" 
 
+
+#Onsdag 09-06-2021
+#To do list 
+	* førsigør services for alle repos 
+	* måske test på services for alle repos
+#Must do
+	* services
+	*
+# to do list tmr 
+	*
+	*
+# Logbog
+	* mads er syg i dag så jeg arbejder igemmen igen igen.
+	*
+
 #tirsdag 08-06/2021
 #To do list
 	* færdigør test af de værse repos 

@@ -21,4 +21,11 @@
     <ProjectReference Include="..\MN Groop A.P.S\MN Groop APS.api.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Login\" />
+    <Folder Include="Produkt\" />
+    <Folder Include="Order-Deatails\" />
+    <Folder Include="Order\" />
+  </ItemGroup>
+
 </Project>

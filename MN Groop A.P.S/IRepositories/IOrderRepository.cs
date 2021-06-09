@@ -14,5 +14,6 @@ namespace MN_Groop_A.P.S.IRepositories
         Task<Order> Update(int id, Order order);
         Task<Order> Delete(int id);
         Task<Order> LoginId(int id);
+       
     }
 }

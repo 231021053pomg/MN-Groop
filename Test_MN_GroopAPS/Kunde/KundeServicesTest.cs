@@ -3,35 +3,34 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Moq;
 using Xunit;
-using MN_Groop_A.P.S.services;
-//using MN_Groop_A.P.S.Repositories;
+using Moq;
 using MN_Groop_A.P.S.IRepositories;
-
+using MN_Groop_A.P.S.Repositories;
+using MN_Groop_A.P.S.services;
 namespace Test_MN_GroopAPS
 {
-    public class KategoriServicesTest
+    public class KundeServicesTest
     {
-        private readonly KategoriServices _sut;
-        private readonly Mock<IKategoriRepository> _kategoriRepositoryMock = new();
+        private readonly KundeServices _sut;
+        private readonly Mock<IKundeRepository> _KundeRepositoryMock = new();
 
-        public KategoriServicesTest()
+        public KundeServicesTest()
         {
-            _sut = new KategoriServices(_kategoriRepositoryMock.Object);
+            _sut = new KundeServices(_KundeRepositoryMock.Object);
         }
 
         [Fact]
         public async Task GetById_ShoudReturnNull_WhenKategoriSoesNotEksist()
         {
             //Arrange 0
-            _kategoriRepositoryMock
+            _KundeRepositoryMock
                 .Setup(x => x.GetById(It.IsAny<int>()))
                 .ReturnsAsync(() => null);
 
 
             //Act
-            var kategori = await _sut.GetKategoriById(123);
+            var kategori = await _sut.GetKundeById(123);
 
 
             //Assert

@@ -2,10 +2,44 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using MN_Groop_A.P.S.IRepositories;
+using MN_Groop_A.P.S.Repositories;
+using MN_Groop_A.P.S.Domain;
 
 namespace MN_Groop_A.P.S.services
 {
-    public class Order_deatails_Services
+    public class Order_deatails_Services : IOrder_DetailseRepository
     {
+        private readonly IOrder_DetailseRepository _order_DetailseRepository;
+        public Order_deatails_Services(IOrder_DetailseRepository order_DetailseRepository)
+        {
+            _order_DetailseRepository = order_DetailseRepository;
+        }
+
+        public async Task<List<Order_detalise>> GetAll()
+        {
+            var orderDeatailse = await _order_DetailseRepository.GetAll();
+            return orderDeatailse;
+        }
+
+        public async Task<Order_detalise> GetById(int id)
+        {
+            var orderDeatailse = await _order_DetailseRepository.GetById(id);
+            return orderDeatailse;
+        }
+
+        public Task<Order_detalise> Update(int id, Order_detalise order_Detalise)
+        {
+            throw new NotImplementedException();
+        }
+        public Task<Order_detalise> Create(Order_detalise order_Detalise)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<Order_detalise> Delete(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
