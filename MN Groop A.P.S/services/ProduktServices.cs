@@ -28,18 +28,22 @@ namespace MN_Groop_A.P.S.services
             return produkt;
         }
 
-        public Task<Produkt> Update(int id, Produkt produkt)
+        public async Task<Produkt> Update(int id, Produkt produkt)
         {
-            throw new NotImplementedException();
+            var editProdukt = await _produktRepository.Update(id, produkt);
+            return editProdukt;
+
         }
-        public Task<Produkt> Create(Produkt produkt)
+        public async Task<Produkt> Create(Produkt produkt)
         {
-            throw new NotImplementedException();
+            var newProdukt = await _produktRepository.Create(produkt);
+            return newProdukt;
         }
 
-        public Task<Produkt> Delete(int id)
+        public async Task<Produkt> Delete(int id)
         {
-            throw new NotImplementedException();
+            var produkt = await _produktRepository.Delete(id);
+            return produkt;
         }
     }
 }

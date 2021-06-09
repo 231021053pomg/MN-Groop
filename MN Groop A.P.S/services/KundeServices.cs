@@ -28,18 +28,23 @@ namespace MN_Groop_A.P.S.services
             var kunde = await _kundeRepository.GetById(id);
             return kunde;
         }
-        public Task<Kunde> Create(Kunde kunde)
+        public async Task<Kunde> Create(Kunde kunde)
         {
-            throw new NotImplementedException();
+            var newKunde = await _kundeRepository.Create(kunde);
+            return newKunde;
         }
-        public Task<Kunde> Update(int id, Kunde kunde)
+        public async Task<Kunde> Update(int id, Kunde kunde)
         {
-            throw new NotImplementedException();
+            var editKunde = await _kundeRepository.Update(id, kunde);
+            return editKunde;
+
         }
-        public Task<Kunde> Delete(int id)
+        public async Task<Kunde> Delete(int id)
         {
-            throw new NotImplementedException();
+            var kunde = await _kundeRepository.Delete(id);
+            return kunde;
         }
+
 
     }
 }

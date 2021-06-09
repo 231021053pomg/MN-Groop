@@ -28,18 +28,21 @@ namespace MN_Groop_A.P.S.services
             return orderDeatailse;
         }
 
-        public Task<Order_detalise> Update(int id, Order_detalise order_Detalise)
+        public async Task<Order_detalise> Update(int id, Order_detalise order_Detalise)
         {
-            throw new NotImplementedException();
+            var editOD = await _order_DetailseRepository.Update(id, order_Detalise);
+            return editOD;
         }
-        public Task<Order_detalise> Create(Order_detalise order_Detalise)
+        public async Task<Order_detalise> Create(Order_detalise order_Detalise)
         {
-            throw new NotImplementedException();
+            var newOD = await _order_DetailseRepository.Create(order_Detalise);
+            return newOD;
         }
 
-        public Task<Order_detalise> Delete(int id)
+        public async Task<Order_detalise> Delete(int id)
         {
-            throw new NotImplementedException();
+            var OD = await _order_DetailseRepository.Delete(id);
+            return OD;
         }
     }
 }

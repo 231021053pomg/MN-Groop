@@ -14,7 +14,7 @@ namespace MN_Groop_A.P.S.services
         private readonly IKategoriRepository _kategoriRepository;
         public KategoriServices(IKategoriRepository kategoriRepository)
         {
-            _kategoriRepository = kategoriRepository; 
+            _kategoriRepository = kategoriRepository;
         }
 
         public async Task<List<Kategori>> GetAllkategoris()
@@ -28,18 +28,21 @@ namespace MN_Groop_A.P.S.services
             var kategori = await _kategoriRepository.GetById(id);
             return kategori;
         }
-        public Task<Kategori> Create(Kategori kategori)
+        public async Task<Kategori> Create(Kategori kategori)
         {
-            throw new NotImplementedException();
+            var newKategori = await _kategoriRepository.Create(kategori);
+            return newKategori;
         }
 
-        public Task<Kategori> Update(int id, Kategori kategori)
+        public async Task<Kategori> Update(int id, Kategori kategori)
         {
-            throw new NotImplementedException();
+            var editKategori = await _kategoriRepository.Update(id, kategori);
+            return editKategori;
         }
-        public Task<Kategori> Delete(int id)
+        public async Task<Kategori> Delete(int id)
         {
-            throw new NotImplementedException();
+            var kategori = await _kategoriRepository.Delete(id);
+            return kategori;
         }
     }
 }

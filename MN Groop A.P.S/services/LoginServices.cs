@@ -28,18 +28,21 @@ namespace MN_Groop_A.P.S.services
             var login = await _loginRepository.GetById(id);
             return login;
         }
-        public  Task<Login> Create(Login login)
+        public async Task<Login> Create(Login login)
         {
-            throw new NotImplementedException();
+            var newLogin = await _loginRepository.Create(login);
+            return newLogin;
         }
-        public Task<Login> Update(int id, Login login)
+        public async Task<Login> Update(int id, Login login)
         {
-            throw new NotImplementedException();
+            var editLogin = await _loginRepository.Update(id, login);
+            return editLogin;
         }
 
-        public  Task<Login> Delete(int id)
+        public async Task<Login> Delete(int id)
         {
-            throw new NotImplementedException();
+            var login = await _loginRepository.Delete(id);
+            return login;
         }
 
         public Task<Login> IsAdmin(int id)

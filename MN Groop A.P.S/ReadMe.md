@@ -10,11 +10,18 @@
 	* services
 	*
 # to do list tmr 
-	*
-	*
+	* controller 
+	* måske test på services 
 # Logbog
 	* mads er syg i dag så jeg arbejder igemmen igen igen.
-	*
+	* jeg har fået lave de sidste services færdig men mangler stadig at lave dem i testende ved ikke helt
+		om jeg dropper dem men ellers laver jeg dem i morgen formedag, skal nemlig i gang emd at lav controllerne
+		som der skal være værdige senest fredag og de skal fungere, så jeg kan starte med angular på man 
+		mads var syg i dag så ham har jeg ikke hørt så meget fra men jeg klare mig selv som jeg er vantil og 
+		arbejder i gemmen så godt jeg kan i den her varme. 
+		de test som jeg mangler at lave er i services test men. hvis jeg skal når at komme i mål med projektet så
+		skal jeg ikke tænke på de der test og så bare lave de der controller i morgen i stednden for 
+
 
 #tirsdag 08-06/2021
 #To do list

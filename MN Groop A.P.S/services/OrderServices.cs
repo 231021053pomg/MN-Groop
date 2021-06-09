@@ -29,18 +29,21 @@ namespace MN_Groop_A.P.S.services
             var order = await _orderRepository.GetById(id);
             return order;
         }
-        public Task<Order> Create(Order order)
+        public async Task<Order> Create(Order order)
         {
-            throw new NotImplementedException();
+            var newOrder = await _orderRepository.Create(order);
+            return newOrder;
         }
 
-        public Task<Order> Update(int id, Order order)
+        public async Task<Order> Update(int id, Order order)
         {
-            throw new NotImplementedException();
+            var editOrder = await _orderRepository.Update(id, order);
+            return editOrder;
         }
-        public Task<Order> Delete(int id)
+        public async Task<Order> Delete(int id)
         {
-            throw new NotImplementedException();
+            var order = await _orderRepository.Delete(id);
+            return order;
         }
 
         public Task<Order> LoginId(int id)
