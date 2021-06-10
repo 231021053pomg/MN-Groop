@@ -13,6 +13,6 @@ namespace MN_Groop_A.P.S.IRepositories
         Task<Kategori> Create(Kategori kategori);
         Task<Kategori> Update(int id, Kategori kategori);
         Task<Kategori> Delete(int id);
-
+        void GetByTitle(string kategoriTitle);
     }
 }

@@ -23,6 +23,7 @@ namespace MN_Groop_A.P.S.Domain
         [StringLength(100, ErrorMessage ="The info is to long dum ass")]
         public string Beskrivelse { get; set; }
 
+        [Required]
         public List<Produkt> Produkts { get; set; }
 
 
