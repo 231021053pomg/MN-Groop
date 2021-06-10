@@ -44,5 +44,10 @@ namespace MN_Groop_A.P.S.services
             var kategori = await _kategoriRepository.Delete(id);
             return kategori;
         }
+
+        public Task GetKategoriByTitle(string kategoriTitle)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

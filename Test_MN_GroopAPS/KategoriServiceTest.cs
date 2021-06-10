@@ -61,21 +61,25 @@ namespace Test_MN_GroopAPS
            
             var KategoriTitle = "Sennep";
             var KategorBeskrivelse = "Den er stærk";
-            var KategoriProdukts = "Saucer";
-
-
+           
+            
+            var kategori = new Kategori
             {
 
-                Title = KategoriTitle;
-                Beskrivelse = KategorBeskrivelse;
-                PProduktsrodukt = KategoriProdukts;
+                Title = KategoriTitle,
+                Beskrivelse = KategorBeskrivelse,
+                Produkts = new List<Produkt> ()
             };
-           
+
+            _kategoriRepositoryMock
+                .Setup(x => x.GetByTitle(KategoriTitle))
+                .ReturnsAsync(mockKategori);
+
             // Act
-            var Kategori = await _sut.GetAuthorById(authorId);
+            var kategori = await _sut.GetKategoriByTitle(KategoriTitle);
 
             // Assert
-            Assert.Equal(mockAuthor, Kategori);
+            Assert.Equal(mockKatergori, kategori);
 
         }
     }
