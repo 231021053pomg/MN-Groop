@@ -1,6 +1,20 @@
 ﻿#Logbog 
 # time line"https://docs.google.com/spreadsheets/d/1TN40KqvpYpN_5dOjwKJ8zJZhrBSNYHDXr-AJjSg6Dj8/edit#gid=0" 
 
+#Torsdag 10-06-2021
+#To do list
+	* controller 
+	* måske test til services 
+# must do
+	* controller 
+	*
+# To do list tmr 
+	*
+	*
+# Logbog 
+	* mads er stadig syg så jeg skal arbejde mere i dag min plan er at starte på at lave controller.
+		jeg vil sankke med jack om jeg skal lave de der test eller om jeg skal lave 
+	* 
 
 #Onsdag 09-06-2021
 #To do list 
