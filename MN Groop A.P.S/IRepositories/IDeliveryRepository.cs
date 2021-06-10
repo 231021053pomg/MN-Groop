@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MN_Groop_A.P.S.IRepositories
 {
-    interface IDeliveryRepository
+    public interface IDeliveryRepository
     {
 
         Task<Delivery> Create(int Antal, string name, string address, int leveringspris, string leveringsmetode, Delivery delivery);

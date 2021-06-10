@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using MN_Groop_A.P.S.Domain;
 using MN_Groop_A.P.S.Database;
 using Microsoft.EntityFrameworkCore;
+using MN_Groop_A.P.S.IRepositories;
 
 namespace MN_Groop_A.P.S.Repositories
 {
