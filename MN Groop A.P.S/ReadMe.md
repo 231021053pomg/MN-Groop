@@ -1,6 +1,24 @@
 ﻿#Logbog 
 # time line"https://docs.google.com/spreadsheets/d/1TN40KqvpYpN_5dOjwKJ8zJZhrBSNYHDXr-AJjSg6Dj8/edit#gid=0" 
 
+#fredag 11-06-2021
+#To do list
+	* controller 
+	* 
+# must do
+	* controller 
+	*
+# To do list tmr 
+	*
+	*
+# Logbog 
+	* mads kommer ikke i dag. i går bad jeg mads om at lave services testene men den var for kedligt for mads så 
+		det gad han ikke. så han started med at lave angular men det kan han ikke da jeg ikke har lavet controllerne færdige 
+		i går da jeg havde den ondeste hovdepine. så jeg satte ham til at lave mockup hvordan det blev idn, så fordelte han at 
+		jeg lavet api'et og intergæret det mens han lavet html og css. rigtig god fordeling 
+	* 
+
+
 #Torsdag 10-06-2021
 #To do list
 	* controller 
@@ -9,7 +27,7 @@
 	* controller 
 	*
 # To do list tmr 
-	*
+	* controler skal laves færdig 
 	*
 # Logbog 
 	* mads er stadig syg så jeg skal arbejde mere i dag min plan er at starte på at lave controller.

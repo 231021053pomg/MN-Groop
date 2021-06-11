@@ -20,19 +20,32 @@ namespace MN_Groop_A.P.S.Controllers
         {
             _kategoriServices = kategoriServices;
         }
-        //Https://localhost:5001/api
+        //Https://localhost:5001/api/kategori
         [HttpGet]
          public async Task<IActionResult> GetAll()
         {
-            var kategori = await _kategoriServices.GetAllkategoris();
-            return Ok(kategori);
+            try
+            {
+                
+                //throw new Exception("Shoud fail");
+                var kategori = await _kategoriServices.GetAllkategoris();
+                return Ok(kategori);
+
+            }
+            catch (Exception ex )
+            {
+
+                return Problem(ex.Message);
+            }
         }
-        //Https://localhost:5001/api
+
+        //Https://localhost:5001/api/kategori
         [HttpPost]
         public async Task<IActionResult> Create(Kategori kategori)
         {
             try
             {
+                throw new Exception("Shoud fail");
                 if (kategori == null)
                 {
                     return BadRequest("Kategori fail....");
@@ -47,5 +60,45 @@ namespace MN_Groop_A.P.S.Controllers
             }
             
         }
+
+        //Https://localhost:5001/api/kategori
+        [HttpPut("{id}")]
+        public async Task<IActionResult> Update([FromQuery]int id, [FromRoute]Kategori kategori)
+        {
+            try
+            {
+                var updatekategori = await _kategoriServices.Update(id, kategori);
+                if (updatekategori == null)
+                {
+                    return BadRequest("update failed");
+                }
+                return Ok(updatekategori);
+            }
+            catch (Exception ex)
+            {
+                return Problem(ex.Message);
+                
+            }    
+        }
+        
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete([FromRoute] int id)
+        {
+            try
+            {
+                var deleteKatagori = await _kategoriServices.Delete(id);
+                if (deleteKatagori == null)
+                {
+                    return BadRequest("delede failed ");
+                }
+                return Ok(deleteKatagori);
+            }
+            catch (Exception ex)
+            {
+                return Problem(ex.Message);
+            }
+        }
+        
     }
 }

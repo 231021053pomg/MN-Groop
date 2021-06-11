@@ -11,11 +11,11 @@ using MN_Groop_A.P.S.Domain;
 
 namespace Test_MN_GroopAPS
 {
-    class kategoriControllerTest
+    public class KategoriControllerTest
     {
         private readonly KategoriController _sut;
         private readonly Mock<IKategoriServices> _kategoriServicesmock = new();
-        public kategoriControllerTest()
+        public KategoriControllerTest()
         {
             _sut = new KategoriController(_kategoriServicesmock.Object);
         }
