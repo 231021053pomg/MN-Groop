@@ -14,6 +14,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using MN_Groop_A.P.S.Repositories;
+using MN_Groop_A.P.S.IServices;
+using MN_Groop_A.P.S.IRepositories;
+using MN_Groop_A.P.S.services;
 
 namespace MN_Groop_A.P.S
 {
@@ -35,7 +38,9 @@ namespace MN_Groop_A.P.S
                 ("MyConnection"))
                 );
 
-            services.AddScoped<KategoriRepository, KategoriRepository>();
+            services.AddScoped<IKategoriRepository, KategoriRepository>();
+            services.AddScoped<IKategoriServices, KategoriServices>();
+
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
