@@ -22,6 +22,7 @@ namespace MN_Groop_A.P.S
 {
     public class Startup
     {
+        readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -32,6 +33,16 @@ namespace MN_Groop_A.P.S
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options =>
+            {
+                options.AddPolicy(name: MyAllowSpecificOrigins,
+                    builder =>
+                    {
+                        builder.WithOrigins("http://localhost:4200")
+                                .AllowAnyHeader()
+                                .AllowAnyMethod();
+                    });
+            });
 
             services.AddDbContext<MNGroupDBConktext>(
                 options => options.UseSqlServer(Configuration.GetConnectionString
@@ -40,6 +51,22 @@ namespace MN_Groop_A.P.S
 
             services.AddScoped<IKategoriRepository, KategoriRepository>();
             services.AddScoped<IKategoriServices, KategoriServices>();
+
+            services.AddScoped<IKundeRepository, KundeRepository>();
+            services.AddScoped<IKundeServices, KundeServices>();
+
+            services.AddScoped<ILoginRepository, LoginRepository>();
+            services.AddScoped<ILoginServices, LoginServices>();
+
+            services.AddScoped<IOrder_DetailseRepository, Order_DetailseRepository>();
+            services.AddScoped<IOrder_Detailes_Services, Order_deatails_Services>();
+
+            services.AddScoped<IOrderRepository, OrderRepository>();
+            services.AddScoped<IOrderServices, OrderServices>();
+
+            services.AddScoped<IProduktRepository, ProduktRepository>();
+            services.AddScoped<IProduktServices, ProduktServices>();
+
 
 
             services.AddControllers();
@@ -52,6 +79,7 @@ namespace MN_Groop_A.P.S
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+         
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -69,6 +97,7 @@ namespace MN_Groop_A.P.S
             {
                 endpoints.MapControllers();
             });
+
         }
     }
 }

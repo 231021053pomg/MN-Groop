@@ -1,6 +1,22 @@
 ﻿#Logbog 
 # time line"https://docs.google.com/spreadsheets/d/1TN40KqvpYpN_5dOjwKJ8zJZhrBSNYHDXr-AJjSg6Dj8/edit#gid=0" 
 
+#Mandag 14-06-2021
+#To do list
+	* start på angular 
+	*
+# must do
+	* angular 
+	* kategoriger hvor vi henter data fra dem 
+# To do list tmr
+	*
+	*
+# Logbog
+	* i dag starter vi på at lave angular, hvor meget mads laver idn idc, men han har formået at lave 
+		mockup. men min plan er i dag er at få lavet forsidne i dag minst. jeg skal også havde tilført noget date til
+		classerne så vi kan hente noget ned.
+	*
+
 #fredag 11-06-2021
 #To do list
 	* controller 
@@ -8,15 +24,22 @@
 # must do
 	* controller 
 	*
-# To do list tmr 
-	*
+# To do list Mandag  
+	* angular 
 	*
 # Logbog 
 	* mads kommer ikke i dag. i går bad jeg mads om at lave services testene men den var for kedligt for mads så 
 		det gad han ikke. så han started med at lave angular men det kan han ikke da jeg ikke har lavet controllerne færdige 
 		i går da jeg havde den ondeste hovdepine. så jeg satte ham til at lave mockup hvordan det blev idn, så fordelte han at 
 		jeg lavet api'et og intergæret det mens han lavet html og css. rigtig god fordeling 
-	* 
+	* fik lave de 2 controllere (katagori og produktor) og nu skal jeg i gang med at lave angular ved ikke 
+		om jeg skal starte på mandag da det er en lang video som jack har lavet, eller om jeg skal lave 
+		det her og nu men glemme hvad det er som jeg har arbejdet med, mangler også at give den nogle fake
+		data så det er at jeg kan se om mit lort fungere. 
+	* mads tror jeg ikke kommer til at lave mere i det her forløb, min plan er at sige at han gerne må lave det 
+		men jeg kommer ikke til at bruge det som han har lavet, bidrager man ikke til hele forløbet så hvorfor
+		skulle jeg så bruge de ting som der bliver lavet. til vores morgne møde snakket jeg med jack, om hvad jeg 
+		skulle priotere og hvad der var kanp så vigtigt 
 
 
 #Torsdag 10-06-2021

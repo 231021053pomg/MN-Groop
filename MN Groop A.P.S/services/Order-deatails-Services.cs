@@ -5,20 +5,26 @@ using System.Threading.Tasks;
 using MN_Groop_A.P.S.IRepositories;
 using MN_Groop_A.P.S.Repositories;
 using MN_Groop_A.P.S.Domain;
+using MN_Groop_A.P.S.IServices;
 
 namespace MN_Groop_A.P.S.services
 {
-    public class Order_deatails_Services : IOrder_DetailseRepository
+    public class Order_deatails_Services : IOrder_Detailes_Services
     {
         private readonly IOrder_DetailseRepository _order_DetailseRepository;
         public Order_deatails_Services(IOrder_DetailseRepository order_DetailseRepository)
         {
             _order_DetailseRepository = order_DetailseRepository;
         }
-
-        public async Task<List<Order_detalise>> GetAll()
+        public async Task<List<Order_detalise>> GetAllOrder_Detailes()
         {
             var orderDeatailse = await _order_DetailseRepository.GetAll();
+            return orderDeatailse;
+        }
+
+        public async Task<Order_detalise> GetOrder_DetailesById(int id)
+        {
+            var orderDeatailse = await _order_DetailseRepository.GetById(id);
             return orderDeatailse;
         }
 
@@ -44,5 +50,6 @@ namespace MN_Groop_A.P.S.services
             var OD = await _order_DetailseRepository.Delete(id);
             return OD;
         }
+
     }
 }

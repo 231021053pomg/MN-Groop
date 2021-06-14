@@ -9,10 +9,10 @@ using MN_Groop_A.P.S.IRepositories;
 
 namespace MN_Groop_A.P.S.Repositories
 {
-    public class KundeRepositoryb : IKundeRepository
+    public class KundeRepository : IKundeRepository
     {
         private readonly MNGroupDBConktext _context;
-        public KundeRepositoryb(MNGroupDBConktext conktext)
+        public KundeRepository(MNGroupDBConktext conktext)
         {
             _context = conktext;
         }

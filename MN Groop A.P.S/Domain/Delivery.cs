@@ -11,7 +11,6 @@ namespace MN_Groop_A.P.S.Domain
     {
         public int Id { get; set; }
         [Required]
-        [StringLength(99, ErrorMessage = "amount is to big")]
         public int Antal { get; set; }
 
         public string name { get; set; }
@@ -20,7 +19,6 @@ namespace MN_Groop_A.P.S.Domain
         public string address { get; set; }
 
         [Required]
-        [StringLength(9999, ErrorMessage = " to long address")]
         public int leveringspris { get; set; }
 
         [Required]

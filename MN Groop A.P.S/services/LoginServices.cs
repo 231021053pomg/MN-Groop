@@ -1,33 +1,32 @@
 ﻿using MN_Groop_A.P.S.Domain;
+using MN_Groop_A.P.S.IRepositories;
+using MN_Groop_A.P.S.IServices;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
-using MN_Groop_A.P.S.IRepositories;
-using MN_Groop_A.P.S.Repositories;
-using MN_Groop_A.P.S.services;
 
 namespace MN_Groop_A.P.S.services
 {
-    public class LoginServices : ILoginRepository
+    public class LoginServices : ILoginServices
     {
         private readonly ILoginRepository _loginRepository;
         public LoginServices(ILoginRepository loginRepository)
         {
             _loginRepository = loginRepository;
         }
-
-        public async Task<List<Login>> GetAll()
+        public async Task<List<Login>> GetAllLogins()
         {
             var login = await _loginRepository.GetAll();
             return login;
-
         }
-        public async Task<Login> GetById(int id)
+
+        
+        public async Task<Login> GetLoginById(int id)
         {
             var login = await _loginRepository.GetById(id);
             return login;
         }
+       
         public async Task<Login> Create(Login login)
         {
             var newLogin = await _loginRepository.Create(login);
@@ -49,6 +48,7 @@ namespace MN_Groop_A.P.S.services
         {
             throw new NotImplementedException();
         }
+
 
     }
 }

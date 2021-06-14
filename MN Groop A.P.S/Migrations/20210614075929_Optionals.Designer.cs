@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MN_Groop_A.P.S.Migrations
 {
     [DbContext(typeof(MNGroupDBConktext))]
-    [Migration("20210603075449_Optionals")]
+    [Migration("20210614075929_Optionals")]
     partial class Optionals
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -20,6 +20,48 @@ namespace MN_Groop_A.P.S.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("ProductVersion", "5.0.6")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+            modelBuilder.Entity("MN_Groop_A.P.S.Domain.Delivery", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("Antal")
+                        .HasMaxLength(99)
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreateAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DelitedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("UpdatetAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("address")
+                        .IsRequired()
+                        .HasMaxLength(99)
+                        .HasColumnType("nvarchar(99)");
+
+                    b.Property<string>("leveringsmetode")
+                        .IsRequired()
+                        .HasMaxLength(9999)
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("leveringspris")
+                        .HasMaxLength(9999)
+                        .HasColumnType("int");
+
+                    b.Property<string>("name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Delivery");
+                });
 
             modelBuilder.Entity("MN_Groop_A.P.S.Domain.Kategori", b =>
                 {
@@ -64,6 +106,11 @@ namespace MN_Groop_A.P.S.Migrations
 
                     b.Property<DateTime?>("DelitedAt")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasMaxLength(40)
+                        .HasColumnType("nvarchar(40)");
 
                     b.Property<string>("FirstName")
                         .IsRequired()
@@ -173,7 +220,7 @@ namespace MN_Groop_A.P.S.Migrations
                     b.Property<DateTime?>("DelitedAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("OrderId")
+                    b.Property<int>("Orderid")
                         .HasColumnType("int");
 
                     b.Property<int>("ProduktId")
@@ -181,6 +228,13 @@ namespace MN_Groop_A.P.S.Migrations
 
                     b.Property<int>("StkPris")
                         .HasMaxLength(9999)
+                        .HasColumnType("int");
+
+                    b.Property<int>("Totalamount")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Totalamunt")
+                        .HasMaxLength(99)
                         .HasColumnType("int");
 
                     b.Property<DateTime?>("UpdatetAt")
@@ -233,11 +287,13 @@ namespace MN_Groop_A.P.S.Migrations
 
             modelBuilder.Entity("MN_Groop_A.P.S.Domain.Produkt", b =>
                 {
-                    b.HasOne("MN_Groop_A.P.S.Domain.Kategori", null)
+                    b.HasOne("MN_Groop_A.P.S.Domain.Kategori", "Kategori")
                         .WithMany("Produkts")
                         .HasForeignKey("KategoriId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Kategori");
                 });
 
             modelBuilder.Entity("MN_Groop_A.P.S.Domain.Kategori", b =>

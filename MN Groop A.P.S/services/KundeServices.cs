@@ -1,10 +1,7 @@
 ﻿using MN_Groop_A.P.S.Domain;
 using MN_Groop_A.P.S.IRepositories;
 using MN_Groop_A.P.S.IServices;
-using MN_Groop_A.P.S.Repositories;
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 
@@ -22,7 +19,7 @@ namespace MN_Groop_A.P.S.services
             var kunde = await _kundeRepository.GetAll();
             return kunde;
         }
-       
+
         public async Task<Kunde> GetKundeById(int id)
         {
             var kunde = await _kundeRepository.GetById(id);

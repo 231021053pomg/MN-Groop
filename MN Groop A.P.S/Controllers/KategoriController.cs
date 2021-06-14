@@ -26,11 +26,9 @@ namespace MN_Groop_A.P.S.Controllers
         {
             try
             {
-                
                 //throw new Exception("Shoud fail");
                 var kategori = await _kategoriServices.GetAllkategoris();
                 return Ok(kategori);
-
             }
             catch (Exception ex )
             {
@@ -45,7 +43,7 @@ namespace MN_Groop_A.P.S.Controllers
         {
             try
             {
-                throw new Exception("Shoud fail");
+                //throw new Exception("Shoud fail");
                 if (kategori == null)
                 {
                     return BadRequest("Kategori fail....");

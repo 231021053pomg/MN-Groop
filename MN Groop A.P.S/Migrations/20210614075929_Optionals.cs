@@ -8,6 +8,26 @@ namespace MN_Groop_A.P.S.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
+                name: "Delivery",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Antal = table.Column<int>(type: "int", maxLength: 99, nullable: false),
+                    name = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    address = table.Column<string>(type: "nvarchar(99)", maxLength: 99, nullable: false),
+                    leveringspris = table.Column<int>(type: "int", maxLength: 9999, nullable: false),
+                    leveringsmetode = table.Column<string>(type: "nvarchar(max)", maxLength: 9999, nullable: false),
+                    CreateAt = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    UpdatetAt = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    DelitedAt = table.Column<DateTime>(type: "datetime2", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Delivery", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Kategori",
                 columns: table => new
                 {
@@ -34,6 +54,7 @@ namespace MN_Groop_A.P.S.Migrations
                     LastName = table.Column<string>(type: "nvarchar(32)", maxLength: 32, nullable: false),
                     VejNavn = table.Column<string>(type: "nvarchar(37)", maxLength: 37, nullable: false),
                     PostNummer = table.Column<int>(type: "int", maxLength: 4, nullable: false),
+                    Email = table.Column<string>(type: "nvarchar(40)", maxLength: 40, nullable: false),
                     LoginId = table.Column<int>(type: "int", nullable: false),
                     CreateAt = table.Column<DateTime>(type: "datetime2", nullable: false),
                     UpdatetAt = table.Column<DateTime>(type: "datetime2", nullable: true),
@@ -86,9 +107,11 @@ namespace MN_Groop_A.P.S.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Antal = table.Column<int>(type: "int", maxLength: 99, nullable: false),
+                    Totalamount = table.Column<int>(type: "int", nullable: false),
+                    Totalamunt = table.Column<int>(type: "int", maxLength: 99, nullable: false),
                     StkPris = table.Column<int>(type: "int", maxLength: 9999, nullable: false),
                     ProduktId = table.Column<int>(type: "int", nullable: false),
-                    OrderId = table.Column<int>(type: "int", nullable: false),
+                    Orderid = table.Column<int>(type: "int", nullable: false),
                     CreateAt = table.Column<DateTime>(type: "datetime2", nullable: false),
                     UpdatetAt = table.Column<DateTime>(type: "datetime2", nullable: true),
                     DelitedAt = table.Column<DateTime>(type: "datetime2", nullable: true)
@@ -131,6 +154,9 @@ namespace MN_Groop_A.P.S.Migrations
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropTable(
+                name: "Delivery");
+
             migrationBuilder.DropTable(
                 name: "Kunde");
 

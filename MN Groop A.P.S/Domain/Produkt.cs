@@ -20,7 +20,6 @@ namespace MN_Groop_A.P.S.Domain
         [StringLength(32, ErrorMessage = "din beskrivelse passer ikke til")]
         public string Beskrivelse { get; set; }
         [Required]
-        [StringLength(9999, ErrorMessage = "prisen er alt for høj")]
         public int Pris { get; set; }
 
         [ForeignKey("Kategori.Id")]

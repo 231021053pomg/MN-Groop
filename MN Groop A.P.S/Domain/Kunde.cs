@@ -21,7 +21,6 @@ namespace MN_Groop_A.P.S.Domain
         [StringLength(37, ErrorMessage = "The street name i to long the name does not eksist!! no road in dk is that long")]
         public string VejNavn { get; set; }
         [Required]
-        [StringLength(4, ErrorMessage = "er du ikke dansk så sælger vi ikke til dig ")]
         public int PostNummer { get; set; }
 
         [Required]

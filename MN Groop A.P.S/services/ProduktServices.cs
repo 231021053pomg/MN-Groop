@@ -5,24 +5,24 @@ using System.Threading.Tasks;
 using MN_Groop_A.P.S.Domain;
 using MN_Groop_A.P.S.Repositories;
 using MN_Groop_A.P.S.IRepositories;
+using MN_Groop_A.P.S.IServices;
 
 namespace MN_Groop_A.P.S.services
 {
-    public class ProduktServices : IProduktRepository
+    public class ProduktServices : IProduktServices
     {
         private readonly IProduktRepository _produktRepository;
         public ProduktServices(IProduktRepository produktRepository)
         {
             _produktRepository = produktRepository;
         }
-
-        public async Task<List<Produkt>> GetAll()
+        public async Task<List<Produkt>> GetAllProduktors()
         {
             var produkt = await _produktRepository.GetAll();
             return produkt;
         }
 
-        public async Task<Produkt> GetById(int id)
+        public async Task<Produkt> GetProduktById(int id)
         {
             var produkt = await _produktRepository.GetById(id);
             return produkt;
@@ -45,5 +45,6 @@ namespace MN_Groop_A.P.S.services
             var produkt = await _produktRepository.Delete(id);
             return produkt;
         }
+
     }
 }
