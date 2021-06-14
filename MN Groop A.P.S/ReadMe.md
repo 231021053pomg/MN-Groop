@@ -9,13 +9,15 @@
 	* angular 
 	* kategoriger hvor vi henter data fra dem 
 # To do list tmr
-	*
+	* angular 
 	*
 # Logbog
 	* i dag starter vi på at lave angular, hvor meget mads laver idn idc, men han har formået at lave 
 		mockup. men min plan er i dag er at få lavet forsidne i dag minst. jeg skal også havde tilført noget date til
 		classerne så vi kan hente noget ned.
-	*
+	* vi havde lidt staryt problemer her til at startere med, men jack hjalp med at fikse dem og så
+		hjalp berk med at fikse de fejl som jeg havde i min kode. mads fik lavet de diste mocku færdige
+		i morgne skal vi rigtig i gang med at lave angular da vi begynder have meget travlt. 
 
 #fredag 11-06-2021
 #To do list
