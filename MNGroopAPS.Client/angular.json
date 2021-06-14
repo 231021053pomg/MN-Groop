@@ -102,5 +102,8 @@
       }
     }
   },
-  "defaultProject": "MNGroopAPS-Client"
+  "defaultProject": "MNGroopAPS-Client",
+  "cli": {
+    "analytics": "9e25b31f-995e-422b-a6d2-e5956ba7cce7"
+  }
 }
