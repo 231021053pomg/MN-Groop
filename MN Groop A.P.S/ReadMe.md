@@ -1,6 +1,20 @@
 ﻿#Logbog 
 # time line"https://docs.google.com/spreadsheets/d/1TN40KqvpYpN_5dOjwKJ8zJZhrBSNYHDXr-AJjSg6Dj8/edit#gid=0" 
 
+# tirsdag 15-0+6-2021
+#To do list
+	* forside angular 
+	* navagitons bar med indhold 
+# must do
+	* forside oppe og køre 
+	*
+# To do list tmr
+	*
+	*
+# Logbog
+	* jeg er started på at lave forsiden til vores angular projekt, og det forventer jeg at lave færdig i dag,
+		jeg skal også lave en nave bar til hejmmesiden, der vil jeg måske spørger berk om hjælp til det.
+
 #Mandag 14-06-2021
 #To do list
 	* start på angular 
