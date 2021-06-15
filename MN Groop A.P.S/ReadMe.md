@@ -14,6 +14,7 @@
 # Logbog
 	* jeg er started på at lave forsiden til vores angular projekt, og det forventer jeg at lave færdig i dag,
 		jeg skal også lave en nave bar til hejmmesiden, der vil jeg måske spørger berk om hjælp til det.
+	* jeg fik started på på hjemmesiden og skal havde lavet e n drop down meny til kate goriger. 
 
 #Mandag 14-06-2021
 #To do list
