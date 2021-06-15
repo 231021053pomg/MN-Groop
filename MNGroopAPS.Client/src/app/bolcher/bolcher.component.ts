@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BolcherComponent implements OnInit {
 
+  Bolcher1: string = "Stærke";
+  Bolcher2: string = "Sure";
+  Bolcher3: string = "Søde";
+
   constructor() { }
 
   ngOnInit(): void {
