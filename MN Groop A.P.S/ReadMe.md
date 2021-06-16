@@ -1,6 +1,23 @@
 ﻿#Logbog 
 # time line"https://docs.google.com/spreadsheets/d/1TN40KqvpYpN_5dOjwKJ8zJZhrBSNYHDXr-AJjSg6Dj8/edit#gid=0" 
 
+#Onsdag 16-06-2021
+#To do list
+	* forside skal oppe og køre jeg skal havde den til at vise de kategoriger som vi har 
+	*
+# must do
+	* forside 
+	*
+# To do list tmr
+	*
+	*
+# Logbog
+	* mads er her ikke i dag så jeg bliver nød til at arbejde ignen alene da han ikker er her, 
+		ved ikke om han vil lave noget der hjemme jeg forventer at han laver det færdigt. 
+		men jeg tvilver. vil prøve at blive færdig her med forside i dag men jeg ved ikke om jeg for den lavet 
+		min plan er at når vi skal aflever projektet så skal det kunne vise det mindste på forsiden
+	*
+
 # tirsdag 15-0+6-2021
 #To do list
 	* forside angular 
