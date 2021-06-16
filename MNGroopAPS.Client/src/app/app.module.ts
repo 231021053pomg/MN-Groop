@@ -13,9 +13,7 @@ import { KategoriComponent } from './kategori/kategori.component';
   declarations: [
     AppComponent,
     BolcherComponent,
-
-    HomepageComponent
-
+    HomepageComponent,
     KategoriComponent
 
   ],
