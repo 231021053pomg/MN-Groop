@@ -8,13 +8,18 @@ import { BolcherComponent } from './bolcher/bolcher.component';
 import { HomepageComponent } from './homepage/homepage.component';
 
 import { KategoriComponent } from './kategori/kategori.component';
+import { KvugComponent } from './kvug/kvug.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BolcherComponent,
+
+  
     HomepageComponent,
-    KategoriComponent
+    KategoriComponent,
+    KvugComponent
+
 
   ],
   imports: [
