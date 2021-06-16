@@ -16,7 +16,7 @@
 		ved ikke om han vil lave noget der hjemme jeg forventer at han laver det færdigt. 
 		men jeg tvilver. vil prøve at blive færdig her med forside i dag men jeg ved ikke om jeg for den lavet 
 		min plan er at når vi skal aflever projektet så skal det kunne vise det mindste på forsiden
-	*
+	* jeg har haft nogle problemer med at få udskrevet de date som vi har i kategori samt medat lave routher link 
 
 # tirsdag 15-0+6-2021
 #To do list
