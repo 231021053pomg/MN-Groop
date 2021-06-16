@@ -15,9 +15,11 @@ import { KvugComponent } from './kvug/kvug.component';
     AppComponent,
     BolcherComponent,
 
+  
     HomepageComponent,
     KategoriComponent,
     KvugComponent
+
 
   ],
   imports: [
