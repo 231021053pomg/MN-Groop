@@ -7,16 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class KategoriComponent implements OnInit {
 
-  //KategoriProduct: string = "Bolcher";
-  //KategoriProduct2: string = "vingummier";
-  katagori: string[] =  [];
+  
+  katagorier: string[] =  [];
   constructor() { }
 
   ngOnInit(): void {
 
-    this.katagori.push("stærke vingummibamser");
-    console.log(this.katagori);
-
+    this.katagorier.push("stærke vingummibamser");
+    this.katagorier.push("stræke bolsher");
   }
+ 
 
 }

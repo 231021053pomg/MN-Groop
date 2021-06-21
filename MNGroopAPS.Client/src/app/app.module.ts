@@ -9,22 +9,24 @@ import { HomepageComponent } from './homepage/homepage.component';
 
 import { KategoriComponent } from './kategori/kategori.component';
 import { KvugComponent } from './kvug/kvug.component';
+import { HttpClientModule } from '@angular/common/http';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     BolcherComponent,
-
-  
     HomepageComponent,
     KategoriComponent,
     KvugComponent
-
-
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    
+
   ],
   providers: [],
   bootstrap: [AppComponent]
