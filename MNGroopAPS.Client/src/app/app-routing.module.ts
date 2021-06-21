@@ -7,7 +7,8 @@ import { KategoriComponent } from './kategori/kategori.component';
 
 const routes: Routes = [
 
-  {path: '' , redirectTo: '/home', pathMatch: 'full'},
+  {path: '' , redirectTo: '/homepage', pathMatch: 'full'},
+  
 
   {path:'', redirectTo:'/karegori', pathMatch: 'full'},
   {path: 'kategori' , component:KategoriComponent},
