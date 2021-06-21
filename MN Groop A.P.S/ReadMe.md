@@ -1,5 +1,22 @@
 ﻿#Logbog 
 # time line"https://docs.google.com/spreadsheets/d/1TN40KqvpYpN_5dOjwKJ8zJZhrBSNYHDXr-AJjSg6Dj8/edit#gid=0" 
+
+#Mandag 21-06-2021
+#To do list
+	* få lavet router link til at du 
+# must do
+	*
+# To do list tmr
+	*
+# Logbog
+	* i dag har jeg haft problmer med at få lavet routerlink. jeg kunne ikke få den til at klikke funktion
+		mads fik det lavet fordi at jeg havde lavet en fejl som var at sjeg havde stavet det forkert,
+		og den tager jeg på mig. ved ikke om vi for lavet crod men det er en af de ting som jeg har lyst til
+		at få lavet inden onsdag, da det er et af de store ting i det her projekt.
+		mads har være fint aktiv i dag som der er en god ting. han har fået lavet mpske ikke lige så meget
+		som jeg kunne ønske men 
+
+
 # fredag 18-06-2021
 # logbog
 	* jeg var til jobsamtele så jeg fik ikke lavet det store i dag 
