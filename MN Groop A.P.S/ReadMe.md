@@ -1,5 +1,8 @@
 ﻿#Logbog 
 # time line"https://docs.google.com/spreadsheets/d/1TN40KqvpYpN_5dOjwKJ8zJZhrBSNYHDXr-AJjSg6Dj8/edit#gid=0" 
+# fredag 18-06-2021
+# logbog
+	* jeg var til jobsamtele så jeg fik ikke lavet det store i dag 
 
 #Onsdag 16-06-2021
 #To do list
