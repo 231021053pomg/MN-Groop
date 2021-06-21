@@ -4,6 +4,7 @@
 #Mandag 21-06-2021
 #To do list
 	* få lavet router link til at du 
+	* få lavet så det er at der kommer data ud på siden
 # must do
 	*
 # To do list tmr
