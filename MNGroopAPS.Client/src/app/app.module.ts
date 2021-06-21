@@ -17,6 +17,7 @@ import { HttpClientModule } from '@angular/common/http';
   declarations: [
     AppComponent,
     BolcherComponent,
+
     HomepageComponent,
     KategoriComponent,
     KvugComponent
