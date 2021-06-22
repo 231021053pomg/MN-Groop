@@ -1,6 +1,35 @@
 ﻿#Logbog 
 # time line"https://docs.google.com/spreadsheets/d/1TN40KqvpYpN_5dOjwKJ8zJZhrBSNYHDXr-AJjSg6Dj8/edit#gid=0" 
 
+#To do list
+	*
+# must do
+	*
+# To do list tmr
+	*
+# Logbog
+	*
+
+
+
+#Tirsdag 22-06-2021
+#To do list
+	* få vist data på siden 
+# must do
+	*
+# To do list tmr
+	* få rettet de fejl som der er i services 
+# Logbog
+	* mads var her ikke i dag igen så det er mig som der måtte lave det hele selv igen igen, men jeg 
+		har venet mig til det. jeg er ved at være ret træt af det her projekt og glæder mig til at vi er 
+		færdige, jeg når måske ikke at blive færdige med crod som er en af de vigtigeste ting at vi skal lave
+		men jegar bejder på sagen jeg havde nogle fejl i mit program så jeg skal lige have jack til at hjælpe mig 
+		med at få den fiket jeg. jeg skal fremlægge om fredagen kl 12 så er jeg færdige og forhåblig består det her 
+		har lyst til at sige at mads skal lave det sidste i det her projekt så han også laver noget, 
+		da jeg er mega trat af at han ikke er her til at hjælpe men det hjælper ikke noget når han ikker er her
+		bare det at han ikke endgang gider at skrive til en at han ikke kommer så, det kan pisse mig rigtig meget af 
+
+
 #Mandag 21-06-2021
 #To do list
 	* få lavet router link til at du 
