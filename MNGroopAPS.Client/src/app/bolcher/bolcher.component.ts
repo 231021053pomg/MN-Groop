@@ -1,3 +1,4 @@
+import { KategoriService } from './../kategori-service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,13 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BolcherComponent implements OnInit {
 
-  Bolcher1: string = "Stærke";
-  Bolcher2: string = "Sure";
-  Bolcher3: string = "Søde";
+  bolchername: string = "sur charry";
+  Bolcher1: string[] = [];
+  
 
-  constructor() { }
+  constructor() {
+    //private KategoriService:KategoriService
+  }
 
   ngOnInit(): void {
+    
   }
 
 }

@@ -10,6 +10,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { KategoriComponent } from './kategori/kategori.component';
 import { KvugComponent } from './kvug/kvug.component';
 import { HttpClientModule } from '@angular/common/http';
+import { KategoriDeatailsComponent } from './kategori-deatails/kategori-deatails.component';
 
 
 
@@ -20,7 +21,8 @@ import { HttpClientModule } from '@angular/common/http';
 
     HomepageComponent,
     KategoriComponent,
-    KvugComponent
+    KvugComponent,
+    KategoriDeatailsComponent
   ],
   imports: [
     BrowserModule,

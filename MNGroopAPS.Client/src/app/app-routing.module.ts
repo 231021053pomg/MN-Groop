@@ -11,13 +11,13 @@ const routes: Routes = [
   {path: 'homepage', component:HomepageComponent},
 
 
-  {path:'', redirectTo:'/karegori', pathMatch: 'full'},
-  {path: 'kategori' , component:KategoriComponent},
+  // {path:'', redirectTo:'/karegori', pathMatch: 'full'},
+  {path: 'kategori/:id' , component:KategoriComponent},
   
-  {path:'', redirectTo:'/kvug', pathMatch:'full'},
+  // {path:'', redirectTo:'/kvug', pathMatch:'full'},
   {path: 'kvug', component:KvugComponent},
 
-  {path: '' , redirectTo: '/bolcher', pathMatch: 'full'},
+  // {path: '' , redirectTo: '/bolcher', pathMatch: 'full'},
   {path: 'bolcher', component:BolcherComponent}
   
   

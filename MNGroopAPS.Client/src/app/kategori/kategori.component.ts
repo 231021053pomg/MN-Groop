@@ -13,8 +13,8 @@ export class KategoriComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.katagorier.push("stærke vingummibamser");
-    this.katagorier.push("stræke bolsher");
+    // this.katagorier.push("stærke vingummibamser");
+    // this.katagorier.push("stræke bolsher");
   }
  
 
