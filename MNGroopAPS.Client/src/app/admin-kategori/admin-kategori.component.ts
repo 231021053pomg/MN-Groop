@@ -3,16 +3,14 @@ import { KategoriService } from './../kategori-service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-kategori',
-  templateUrl: './kategori.component.html',
-  styleUrls: ['./kategori.component.css']
+  selector: 'app-admin-kategori',
+  templateUrl: './admin-kategori.component.html',
+  styleUrls: ['./admin-kategori.component.css']
 })
-export class KategoriComponent implements OnInit {
-
+export class AdminKategoriComponent implements OnInit {
   kategori: Kategori ={id: 0, title: "", beskrivelse: ""}
   kategorier: Kategori[] = [];
-  
-  katagorier: string[] =  [];
+
   constructor(
     private kategoriService: KategoriService,
   ) { }
@@ -54,6 +52,5 @@ export class KategoriComponent implements OnInit {
       .subscribe(_ => this.getKategorier());
     }
   }
- 
 
 }

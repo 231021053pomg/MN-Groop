@@ -34,7 +34,7 @@ namespace MN_Groop_A.P.S
                 options.AddPolicy(name: MyAllowSpecificOrigins,
                     builder =>
                     {
-                        builder.WithOrigins("http://localhost:4200")
+                        builder.AllowAnyOrigin()// WithOrigins("http://localhost:4200")
                                 .AllowAnyHeader()
                                 .AllowAnyMethod();
                     });
@@ -90,6 +90,8 @@ namespace MN_Groop_A.P.S
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseCors(MyAllowSpecificOrigins);
 
             app.UseAuthorization();
 

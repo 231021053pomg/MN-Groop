@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MN_Groop_A.P.S.Migrations
 {
     [DbContext(typeof(MNGroupDBConktext))]
-    [Migration("20210614075929_Optionals")]
-    partial class Optionals
+    [Migration("20210623083850_tester")]
+    partial class tester
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -29,7 +29,6 @@ namespace MN_Groop_A.P.S.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<int>("Antal")
-                        .HasMaxLength(99)
                         .HasColumnType("int");
 
                     b.Property<DateTime>("CreateAt")
@@ -52,7 +51,6 @@ namespace MN_Groop_A.P.S.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("leveringspris")
-                        .HasMaxLength(9999)
                         .HasColumnType("int");
 
                     b.Property<string>("name")
@@ -126,7 +124,6 @@ namespace MN_Groop_A.P.S.Migrations
                         .HasColumnType("int");
 
                     b.Property<int>("PostNummer")
-                        .HasMaxLength(4)
                         .HasColumnType("int");
 
                     b.Property<DateTime?>("UpdatetAt")
@@ -211,7 +208,6 @@ namespace MN_Groop_A.P.S.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<int>("Antal")
-                        .HasMaxLength(99)
                         .HasColumnType("int");
 
                     b.Property<DateTime>("CreateAt")
@@ -227,14 +223,12 @@ namespace MN_Groop_A.P.S.Migrations
                         .HasColumnType("int");
 
                     b.Property<int>("StkPris")
-                        .HasMaxLength(9999)
                         .HasColumnType("int");
 
                     b.Property<int>("Totalamount")
                         .HasColumnType("int");
 
                     b.Property<int>("Totalamunt")
-                        .HasMaxLength(99)
                         .HasColumnType("int");
 
                     b.Property<DateTime?>("UpdatetAt")
@@ -272,7 +266,6 @@ namespace MN_Groop_A.P.S.Migrations
                         .HasColumnType("nvarchar(32)");
 
                     b.Property<int>("Pris")
-                        .HasMaxLength(9999)
                         .HasColumnType("int");
 
                     b.Property<DateTime?>("UpdatetAt")

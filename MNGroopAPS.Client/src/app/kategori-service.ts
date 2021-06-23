@@ -1,17 +1,18 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
-import { Kategori } from './domain';
 import { catchError, tap } from 'rxjs/operators';
+
+import { Kategori } from './domain';
 
 @Injectable({
   providedIn: 'root'
 })
 export class KategoriService {
-  apiUrl: string = "http://localhost:5001/api/kategori";
+  apiUrl: string = "https://localhost:5001/api/kategori";
 
   httpOptions = {
-    Headers: new HttpHeaders({'content-type': 'application/jason'})
+    headers: new HttpHeaders({'Content-Type': 'application/json'})
   };
 
   constructor(
@@ -23,9 +24,10 @@ export class KategoriService {
   }
 
   getKategori(id:number): Observable<Kategori>{
-    return this.http.get<Kategori>(`$(this.apiUrl}/${id}`).pipe(
+    return this.http.get<any>(`${this.apiUrl}/${id}`).pipe(
       catchError(this.handleError<any>('GetOneKategori'))
-  };
+    )};
+
 
   addkategori(kategori: Kategori): Observable<Kategori> {
     return this.http.post<Kategori>(this.apiUrl, kategori, this.httpOptions).pipe(
@@ -33,8 +35,8 @@ export class KategoriService {
     );
   }
 
-  updateKategori(id:number, kategori: Kategori): Observable<Kategori>{
-    return this.http.put<Kategori>(`${this.apiUrl}/${id}`, kategori, this.httpOptions)
+  updateKategori(kategori: Kategori): Observable<Kategori>{
+    return this.http.put<Kategori>(`${this.apiUrl}/${kategori.id}`, kategori ,this.httpOptions)
       .pipe(catchError(this.handleError<any>('updateKategori')));
   }
 

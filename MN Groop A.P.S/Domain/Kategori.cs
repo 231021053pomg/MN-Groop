@@ -13,8 +13,6 @@ namespace MN_Groop_A.P.S.Domain
             Produkts = new List<Produkt>();
         }
 
-        
-
         [Required]
         [StringLength(32, ErrorMessage = "The Name is to long dum ass")]
         public string Title { get; set; }

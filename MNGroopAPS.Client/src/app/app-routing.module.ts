@@ -1,3 +1,4 @@
+import { AdminKategoriComponent } from './admin-kategori/admin-kategori.component';
 import { KvugComponent } from './kvug/kvug.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { NgModule } from '@angular/core';
@@ -10,9 +11,10 @@ const routes: Routes = [
   {path: '' , redirectTo: '/homepage', pathMatch: 'full'},
   {path: 'homepage', component:HomepageComponent},
 
+  {path: 'adminkategori', component:AdminKategoriComponent},
 
   // {path:'', redirectTo:'/karegori', pathMatch: 'full'},
-  {path: 'kategori/:id' , component:KategoriComponent},
+  {path: 'kategori' , component:KategoriComponent},
   
   // {path:'', redirectTo:'/kvug', pathMatch:'full'},
   {path: 'kvug', component:KvugComponent},

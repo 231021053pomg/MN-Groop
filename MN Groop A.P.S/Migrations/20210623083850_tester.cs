@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace MN_Groop_A.P.S.Migrations
 {
-    public partial class Optionals : Migration
+    public partial class tester : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -13,10 +13,10 @@ namespace MN_Groop_A.P.S.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Antal = table.Column<int>(type: "int", maxLength: 99, nullable: false),
+                    Antal = table.Column<int>(type: "int", nullable: false),
                     name = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     address = table.Column<string>(type: "nvarchar(99)", maxLength: 99, nullable: false),
-                    leveringspris = table.Column<int>(type: "int", maxLength: 9999, nullable: false),
+                    leveringspris = table.Column<int>(type: "int", nullable: false),
                     leveringsmetode = table.Column<string>(type: "nvarchar(max)", maxLength: 9999, nullable: false),
                     CreateAt = table.Column<DateTime>(type: "datetime2", nullable: false),
                     UpdatetAt = table.Column<DateTime>(type: "datetime2", nullable: true),
@@ -53,7 +53,7 @@ namespace MN_Groop_A.P.S.Migrations
                     FirstName = table.Column<string>(type: "nvarchar(13)", maxLength: 13, nullable: false),
                     LastName = table.Column<string>(type: "nvarchar(32)", maxLength: 32, nullable: false),
                     VejNavn = table.Column<string>(type: "nvarchar(37)", maxLength: 37, nullable: false),
-                    PostNummer = table.Column<int>(type: "int", maxLength: 4, nullable: false),
+                    PostNummer = table.Column<int>(type: "int", nullable: false),
                     Email = table.Column<string>(type: "nvarchar(40)", maxLength: 40, nullable: false),
                     LoginId = table.Column<int>(type: "int", nullable: false),
                     CreateAt = table.Column<DateTime>(type: "datetime2", nullable: false),
@@ -106,10 +106,10 @@ namespace MN_Groop_A.P.S.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Antal = table.Column<int>(type: "int", maxLength: 99, nullable: false),
+                    Antal = table.Column<int>(type: "int", nullable: false),
                     Totalamount = table.Column<int>(type: "int", nullable: false),
-                    Totalamunt = table.Column<int>(type: "int", maxLength: 99, nullable: false),
-                    StkPris = table.Column<int>(type: "int", maxLength: 9999, nullable: false),
+                    Totalamunt = table.Column<int>(type: "int", nullable: false),
+                    StkPris = table.Column<int>(type: "int", nullable: false),
                     ProduktId = table.Column<int>(type: "int", nullable: false),
                     Orderid = table.Column<int>(type: "int", nullable: false),
                     CreateAt = table.Column<DateTime>(type: "datetime2", nullable: false),
@@ -129,7 +129,7 @@ namespace MN_Groop_A.P.S.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(type: "nvarchar(32)", maxLength: 32, nullable: false),
                     Beskrivelse = table.Column<string>(type: "nvarchar(32)", maxLength: 32, nullable: false),
-                    Pris = table.Column<int>(type: "int", maxLength: 9999, nullable: false),
+                    Pris = table.Column<int>(type: "int", nullable: false),
                     KategoriId = table.Column<int>(type: "int", nullable: false),
                     CreateAt = table.Column<DateTime>(type: "datetime2", nullable: false),
                     UpdatetAt = table.Column<DateTime>(type: "datetime2", nullable: true),

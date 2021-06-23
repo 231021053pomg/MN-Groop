@@ -9,7 +9,7 @@ namespace MN_Groop_A.P.S.Domain
 {
     public class Delivery : BaseStruktur
     {
-        public int Id { get; set; }
+        //public int Id { get; set; }
         [Required]
         public int Antal { get; set; }
 

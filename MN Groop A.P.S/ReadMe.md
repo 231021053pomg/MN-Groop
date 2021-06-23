@@ -10,7 +10,22 @@
 # Logbog
 	*
 
-
+#onsdag 23-06-2021
+#To do list
+	* færdig gør crod
+# must do
+	* crod
+# To do list tmr
+	* hør om begræber i videoer til fredag til fremlæggelse samt skriv kommen tager på ting som er i twivl
+# Logbog
+	* jeg har fået lavet crod færdig og det kan både udskrive på siden, slette, oprette og rette på de værdiger som der 
+		er på siden, jeg havde en del problmer med at få det lavet så jeg bruget en god tid aj jacks tid til
+		at få lavet crod, samt med alle de fejl som jeg havde, så i morgen og noget af fredag skal jeg side 
+		og skrive kommentare på de ting som jeg er usikker på, og det er en del. 
+		mads kom heller ikke i dag så jeg aflever det som jeg har også må han sejle i hans egen sø, jeg er 
+		ligeglad med ham lige nu han kommer ikke til tingende og han laver ikke noget så, det er hans problem
+		min mål er at bestå med i det minste 02. så er jeg bare glad, men jeg håber på at jack kan se at jeg har 
+		lavet et produkt som det virker men at han ved hvor mange problmer jeg har med det her. 
 
 #Tirsdag 22-06-2021
 #To do list
