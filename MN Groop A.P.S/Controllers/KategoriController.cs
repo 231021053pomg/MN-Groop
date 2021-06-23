@@ -61,7 +61,7 @@ namespace MN_Groop_A.P.S.Controllers
 
         //Https://localhost:5001/api/kategori
         [HttpPut("{id}")]
-        public async Task<IActionResult> Update([FromQuery]int id, [FromRoute]Kategori kategori)
+        public async Task<IActionResult> Update([FromRoute] int id, [FromBody] Kategori kategori)
         {
             try
             {

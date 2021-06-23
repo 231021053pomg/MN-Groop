@@ -1,6 +1,103 @@
 ﻿#Logbog 
 # time line"https://docs.google.com/spreadsheets/d/1TN40KqvpYpN_5dOjwKJ8zJZhrBSNYHDXr-AJjSg6Dj8/edit#gid=0" 
 
+#To do list
+	*
+# must do
+	*
+# To do list tmr
+	*
+# Logbog
+	*
+
+#onsdag 23-06-2021
+#To do list
+	* færdig gør crod
+# must do
+	* crod
+# To do list tmr
+	* hør om begræber i videoer til fredag til fremlæggelse samt skriv kommen tager på ting som er i twivl
+# Logbog
+	* jeg har fået lavet crod færdig og det kan både udskrive på siden, slette, oprette og rette på de værdiger som der 
+		er på siden, jeg havde en del problmer med at få det lavet så jeg bruget en god tid aj jacks tid til
+		at få lavet crod, samt med alle de fejl som jeg havde, så i morgen og noget af fredag skal jeg side 
+		og skrive kommentare på de ting som jeg er usikker på, og det er en del. 
+		mads kom heller ikke i dag så jeg aflever det som jeg har også må han sejle i hans egen sø, jeg er 
+		ligeglad med ham lige nu han kommer ikke til tingende og han laver ikke noget så, det er hans problem
+		min mål er at bestå med i det minste 02. så er jeg bare glad, men jeg håber på at jack kan se at jeg har 
+		lavet et produkt som det virker men at han ved hvor mange problmer jeg har med det her. 
+
+#Tirsdag 22-06-2021
+#To do list
+	* få vist data på siden 
+# must do
+	*
+# To do list tmr
+	* få rettet de fejl som der er i services 
+# Logbog
+	* mads var her ikke i dag igen så det er mig som der måtte lave det hele selv igen igen, men jeg 
+		har venet mig til det. jeg er ved at være ret træt af det her projekt og glæder mig til at vi er 
+		færdige, jeg når måske ikke at blive færdige med crod som er en af de vigtigeste ting at vi skal lave
+		men jegar bejder på sagen jeg havde nogle fejl i mit program så jeg skal lige have jack til at hjælpe mig 
+		med at få den fiket jeg. jeg skal fremlægge om fredagen kl 12 så er jeg færdige og forhåblig består det her 
+		har lyst til at sige at mads skal lave det sidste i det her projekt så han også laver noget, 
+		da jeg er mega trat af at han ikke er her til at hjælpe men det hjælper ikke noget når han ikker er her
+		bare det at han ikke endgang gider at skrive til en at han ikke kommer så, det kan pisse mig rigtig meget af 
+
+
+#Mandag 21-06-2021
+#To do list
+	* få lavet router link til at du 
+	* få lavet så det er at der kommer data ud på siden
+# must do
+	*
+# To do list tmr
+	*
+# Logbog
+	* i dag har jeg haft problmer med at få lavet routerlink. jeg kunne ikke få den til at klikke funktion
+		mads fik det lavet fordi at jeg havde lavet en fejl som var at sjeg havde stavet det forkert,
+		og den tager jeg på mig. ved ikke om vi for lavet crod men det er en af de ting som jeg har lyst til
+		at få lavet inden onsdag, da det er et af de store ting i det her projekt.
+		mads har være fint aktiv i dag som der er en god ting. han har fået lavet mpske ikke lige så meget
+		som jeg kunne ønske men 
+
+
+# fredag 18-06-2021
+# logbog
+	* jeg var til jobsamtele så jeg fik ikke lavet det store i dag 
+
+#Onsdag 16-06-2021
+#To do list
+	* forside skal oppe og køre jeg skal havde den til at vise de kategoriger som vi har 
+	*
+# must do
+	* forside 
+	*
+# To do list tmr
+	*
+	*
+# Logbog
+	* mads er her ikke i dag så jeg bliver nød til at arbejde ignen alene da han ikker er her, 
+		ved ikke om han vil lave noget der hjemme jeg forventer at han laver det færdigt. 
+		men jeg tvilver. vil prøve at blive færdig her med forside i dag men jeg ved ikke om jeg for den lavet 
+		min plan er at når vi skal aflever projektet så skal det kunne vise det mindste på forsiden
+	* jeg har haft nogle problemer med at få udskrevet de date som vi har i kategori samt medat lave routher link 
+
+# tirsdag 15-0+6-2021
+#To do list
+	* forside angular 
+	* navagitons bar med indhold 
+# must do
+	* forside oppe og køre 
+	*
+# To do list tmr
+	*
+	*
+# Logbog
+	* jeg er started på at lave forsiden til vores angular projekt, og det forventer jeg at lave færdig i dag,
+		jeg skal også lave en nave bar til hejmmesiden, der vil jeg måske spørger berk om hjælp til det.
+	* jeg fik started på på hjemmesiden og skal havde lavet e n drop down meny til kate goriger. 
+
 #Mandag 14-06-2021
 #To do list
 	* start på angular 
@@ -9,13 +106,15 @@
 	* angular 
 	* kategoriger hvor vi henter data fra dem 
 # To do list tmr
-	*
+	* angular 
 	*
 # Logbog
 	* i dag starter vi på at lave angular, hvor meget mads laver idn idc, men han har formået at lave 
 		mockup. men min plan er i dag er at få lavet forsidne i dag minst. jeg skal også havde tilført noget date til
 		classerne så vi kan hente noget ned.
-	*
+	* vi havde lidt staryt problemer her til at startere med, men jack hjalp med at fikse dem og så
+		hjalp berk med at fikse de fejl som jeg havde i min kode. mads fik lavet de diste mocku færdige
+		i morgne skal vi rigtig i gang med at lave angular da vi begynder have meget travlt. 
 
 #fredag 11-06-2021
 #To do list

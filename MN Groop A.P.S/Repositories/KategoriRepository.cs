@@ -49,7 +49,8 @@ namespace MN_Groop_A.P.S.Repositories
                 editKategori.UpdatetAt = DateTime.Now;
                 editKategori.Title = kategori.Title;
                 editKategori.Beskrivelse = kategori.Beskrivelse;
-                _context.SaveChangesAsync();
+                _context.Kategori.Update(editKategori);
+                await _context.SaveChangesAsync();
             }
             return editKategori;
         }
