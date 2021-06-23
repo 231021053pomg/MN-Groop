@@ -13,7 +13,7 @@
 <div class="kategorilist" *ngIf="kategorier.length > 0">
     <ul *ngFor="let kategori of kategorier">
         <a (click)="edit(kategori)">{{kategori.title}}</a>
-        <a (click)="delete(kategori)"> slet</a>
+        <a (click)="delete(kategori)"> [slet]</a>
     </ul>
 
 

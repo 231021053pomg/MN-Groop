@@ -1,7 +1,6 @@
 import { Kategori } from './../domain';
 import { KategoriService } from './../kategori-service';
 import { Component, OnInit } from '@angular/core';
-
 @Component({
   selector: 'app-kategori',
   templateUrl: './kategori.component.html',
@@ -11,8 +10,7 @@ export class KategoriComponent implements OnInit {
 
   kategori: Kategori ={id: 0, title: "", beskrivelse: ""}
   kategorier: Kategori[] = [];
-  
-  katagorier: string[] =  [];
+
   constructor(
     private kategoriService: KategoriService,
   ) { }

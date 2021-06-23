@@ -9,13 +9,13 @@
   <input id="beskrivelse" [(ngModel)]="kategori.beskrivelse">
 </div>
 <button (click)="save()">gem slik</button>
-<!-- <button value="Reset">Reset</button> -->
 
-<div class="kategorilist" *ngIf="kategorier.length > 0" >
+
+<div  *ngIf="kategorier.length > 0" >
   <ul *ngFor="let kategori of kategorier">
       <a (click)="edit(kategori)">{{kategori.title}}</a>
       <a (click)="delete(kategori)"> slet</a>
   </ul>
 
 
-</div>
+</div> 
